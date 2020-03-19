@@ -1,0 +1,27 @@
+<select class="mpcth-wpml-vanila-language-switcher">
+    {% for code, language in languages %}
+        <option value="{{ language.url }}"
+            {%- if language.is_current and (language.native_name or language.display_name) -%}
+                selected="selected">
+                {%- set current_language_name = language.native_name|default(language.display_name) -%}
+                {{- current_language_name -}}
+
+            {%- else -%}
+        >
+                {%- if language.native_name -%}
+                    {{- language.native_name -}}
+                {%- endif -%}
+
+                {%- if language.display_name -%}
+
+						{%- if language.native_name -%}({%- endif -%}
+                        {{- language.display_name -}}
+                        {%- if language.native_name -%}){%- endif -%}
+
+                {%- endif -%}
+
+            {%- endif -%}
+
+        </option>
+    {% endfor %}
+</select>

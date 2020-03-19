@@ -1,0 +1,13 @@
+{
+  "name": "Default",
+  "version": "1.0",
+  "slug": "blaszok-wpml-lang-vanila",
+  "for": [
+    "sidebars",
+    "footer",
+    "shortcode_actions"
+  ],
+  "settings": {
+    "display_link_for_current_lang": 1
+  }
+}

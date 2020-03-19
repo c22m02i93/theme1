@@ -1,0 +1,588 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'vitaz';
+  src: url("../fonts/vitaz.eot");
+  src: local("тШ║"), url("../fonts/vitaz.woff") format("woff"), url("../fonts/vitaz.ttf") format("truetype"), url("../fonts/vitaz.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  font-family: 'Open Sans', sans-serif; }
+
+html,
+body {
+  font-size: 14px !important;
+  color: #333;
+  overflow-x: hidden; }
+  @media (max-width: 750px) {
+    html,
+    body {
+      font-size: 12px !important; } }
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600; }
+
+.widget_calendar table#wp-calendar a {
+  font-weight: bold;
+  color: #3b92c4; }
+
+h3.mpcth-deco-header {
+  font-size: 18px;
+  margin-top: 20px;
+  display: block; }
+
+.showMoreNews {
+  display: flex;
+  list-style: none;
+  padding-left: 0; }
+  .showMoreNews li {
+    margin-right: 20px; }
+
+.rssFeeds ul {
+  list-style: none;
+  padding-left: 0; }
+  .rssFeeds ul li {
+    margin-bottom: 10px; }
+  .rssFeeds ul .rss-date {
+    color: #aaa; }
+
+body #mpcth_breadcrumbs {
+  float: none;
+  margin-bottom: 20px;
+  width: auto;
+  overflow: hidden;
+  max-width: unset; }
+
+a {
+  color: #3b92c4; }
+
+#mpcth_main {
+  padding: 15px 0; }
+
+.sliderarea {
+  border-bottom: 1px solid #ddd7c6;
+  background-color: #f6f9fb; }
+
+.newsItem {
+  margin: 0 5px; }
+
+/* ╨Ф╤А╤Г╨│╨╕╨╡ ╨╖╨░╨┐╨╕╤Б╨╕ related items */
+.related_posts .relateditem {
+  margin-bottom: 15px; }
+  .related_posts .relateditem img {
+    margin-bottom: 10px; }
+  .related_posts .relateditem .date {
+    margin-top: 0px; }
+
+/* ╨Т╨╡╤А╤Е╨╜╨╡╨╡ ╨╝╨╡╨╜╤О */
+#mpcth_header_second_section {
+  display: none;
+  background-color: #444; }
+  #mpcth_header_second_section #mpcth_page_header_secondary_content {
+    border: none;
+    margin: 0; }
+    #mpcth_header_second_section #mpcth_page_header_secondary_content #mpcth_secondary_mini_menu {
+      margin: 0; }
+      #mpcth_header_second_section #mpcth_page_header_secondary_content #mpcth_secondary_mini_menu:before {
+        border: none; }
+      #mpcth_header_second_section #mpcth_page_header_secondary_content #mpcth_secondary_mini_menu a {
+        color: #fff; }
+
+.ornament {
+  height: 30px;
+  background-image: url(../images/ornament2.png);
+  background-size: contain; }
+
+.ornament2 {
+  height: 20px;
+  background-image: url(../images/ornament3.png);
+  background-size: contain;
+  margin-top: 40px; }
+
+/* ╨Ь╨Х╨Э╨о MENU */
+body #mpcth_nav {
+  width: 100%; }
+  body #mpcth_nav ul#mpcth_menu {
+    display: table;
+    width: 100%; }
+    body #mpcth_nav ul#mpcth_menu ul.sub-menu {
+      max-width: 300px;
+      min-width: 250px;
+      height: auto; }
+      body #mpcth_nav ul#mpcth_menu ul.sub-menu:after, body #mpcth_nav ul#mpcth_menu ul.sub-menu:before {
+        border-top: 10px solid #fff; }
+      body #mpcth_nav ul#mpcth_menu ul.sub-menu:after {
+        top: -1px;
+        border-top: 10px solid #3b92c4; }
+      body #mpcth_nav ul#mpcth_menu ul.sub-menu > a {
+        font-size: 14px; }
+      body #mpcth_nav ul#mpcth_menu ul.sub-menu li.menu-item {
+        text-transform: none;
+        white-space: normal; }
+    body #mpcth_nav ul#mpcth_menu > li.current-menu-item > a,
+    body #mpcth_nav ul#mpcth_menu > li:hover > a,
+    body #mpcth_nav ul#mpcth_menu > li > a:hover,
+    body #mpcth_nav ul#mpcth_menu > li.current-menu-parent > a {
+      color: #fff !important;
+      text-decoration: underline; }
+    body #mpcth_nav ul#mpcth_menu > li {
+      padding: 0 10px;
+      display: table-cell;
+      font-size: 14px; }
+      body #mpcth_nav ul#mpcth_menu > li.menu-item-has-children > a {
+        padding-right: 10px; }
+        body #mpcth_nav ul#mpcth_menu > li.menu-item-has-children > a:after {
+          padding-left: 5px;
+          border: none;
+          display: block;
+          top: 10px;
+          font-family: 'FontAwesome';
+          content: '\f107'; }
+      body #mpcth_nav ul#mpcth_menu > li > a {
+        color: #fff;
+        display: block;
+        margin: 0;
+        padding-top: 8px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        text-align: center; }
+
+ul#mpcth_menu.mpcth-menu > li li {
+  font-size: 16px; }
+
+ul#mpcth_menu.mpcth-menu ul.sub-menu ul.sub-menu li {
+  width: 400px;
+  white-space: normal;
+  text-transform: none; }
+
+.breadcrumb {
+  padding: 16px;
+  margin: 0;
+  border-bottom: 1px solid #ddd7c6;
+  border-radius: 0; }
+
+.breadcrumb li {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0 5px; }
+
+.breadcrumb li span.sep {
+  padding-left: 10px; }
+
+.clr {
+  clear: both; }
+
+/* ╨д╨г╨в╨Х╨а FOOTER */
+footer#mpcth_footer {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #f6f9fb;
+  background-repeat: repeat-x; }
+  footer#mpcth_footer img {
+    margin-top: 10px; }
+  footer#mpcth_footer .menu ul {
+    display: none; }
+  footer#mpcth_footer a {
+    color: #3b92c4 !important; }
+
+h3.anonstitle {
+  font-size: 15px;
+  margin: 0; }
+  @media (max-width: 750px) {
+    h3.anonstitle {
+      font-size: 13px; } }
+
+/* subcats */
+.subcats {
+  padding-top: 20px; }
+  .subcats li {
+    margin-bottom: 10px; }
+  .subcats a {
+    font-size: 24px; }
+
+@media (max-width: 750px) {
+  #mpcth_content {
+    margin: 0 10px; } }
+
+@media (max-width: 750px) {
+  #mpcth_footer {
+    padding: 0 10px; } }
+
+/* header ╤Е╨╡╨░╨┤╨╡╤А */
+body #mpcth_header_section {
+  background-color: #9fdcfb;
+  background-image: url(../images/verh-sajta-1.jpg);
+  background-position: top center; }
+  body #mpcth_header_section #mpcth_logo_wrap {
+    height: 300px; }
+    @media (max-width: 750px) {
+      body #mpcth_header_section #mpcth_logo_wrap {
+        padding: 0 !important;
+        height: auto; } }
+  body #mpcth_header_section #mpcth_logo {
+    margin-right: 50px;
+    margin-bottom: 0; }
+    @media (max-width: 750px) {
+      body #mpcth_header_section #mpcth_logo {
+        margin-right: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        max-width: 80% !important; } }
+    body #mpcth_header_section #mpcth_logo img {
+      max-height: 100%; }
+  body #mpcth_header_section #mpcth_page_header_content {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important; }
+  body #mpcth_header_section #mpcth_controls_wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 !important;
+    margin: 0 !important; }
+    body #mpcth_header_section #mpcth_controls_wrap #mpcth_controls_container a {
+      background-color: #3b92c4 !important;
+      color: #fff !important; }
+
+#topMenu {
+  background-color: #3b92c4; }
+  #topMenu .mpcth-header-wrap {
+    max-width: 1200px;
+    margin: 0 auto; }
+
+.pravcal img {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px; }
+.pravcal .textwidget {
+  padding-bottom: 15px;
+  text-align: justify; }
+
+/* ╨У╨░╨╗╨╡╤А╨╡╤П */
+.kvgallery {
+  margin: 15px 0; }
+  .kvgallery .gallitem {
+    padding: 10px 0;
+    display: block; }
+
+.newsshort ul {
+  padding-left: 0;
+  list-style: none; }
+  .newsshort ul li {
+    margin-bottom: 15px; }
+    .newsshort ul li .wrap {
+      display: flex; }
+    .newsshort ul li .thumb {
+      display: block;
+      width: 30%;
+      margin: 5px 10px 10px 0; }
+      .newsshort ul li .thumb img {
+        width: 100%;
+        height: auto; }
+    .newsshort ul li h3 {
+      flex: 1; }
+      .newsshort ul li h3 a {
+        color: #333; }
+
+.novosti2 ul,
+.rssFeeds ul,
+.pravcal ul {
+  padding: 0;
+  margin: 0; }
+  .novosti2 ul li,
+  .rssFeeds ul li,
+  .pravcal ul li {
+    margin-bottom: 15px; }
+    .novosti2 ul li a,
+    .rssFeeds ul li a,
+    .pravcal ul li a {
+      font-weight: bold;
+      font-size: 15px;
+      color: #333; }
+    .novosti2 ul li .fileitem a,
+    .rssFeeds ul li .fileitem a,
+    .pravcal ul li .fileitem a {
+      font-weight: normal; }
+
+/* LOGO ╨Ы╨Ю╨У╨Ю */
+@media (max-width: 768px) {
+  #mpcth_logo img {
+    width: 100%;
+    padding: 0 20px;
+    height: auto; }
+
+  #mpcth_controls_wrap {
+    display: none !important; }
+
+  #mpcth_header_section {
+    height: 140px; } }
+@media (min-width: 960px) {
+  #mpcth_nav ul#mpcth_menu > li {
+    font-size: 16px; } }
+@media (min-width: 1200px) {
+  #mpcth_nav ul#mpcth_menu > li {
+    font-size: 14px; } }
+/* ╨Э╨╛╨▓╨╛╤Б╤В╨╕ */
+.news {
+  padding-bottom: 15px;
+  position: relative; }
+  .news img {
+    width: 100%;
+    height: auto; }
+  .news h2 {
+    font-size: 16px; }
+    @media (max-width: 750px) {
+      .news h2 {
+        font-size: 12px; } }
+  .news .date {
+    margin-left: 2px; }
+
+.date {
+  padding: 10px 0; }
+
+.anonsnavblock {
+  border-top: 1px solid #ddd7c6;
+  margin-top: 15px;
+  padding-top: 10px; }
+
+.widgettitle {
+  display: block; }
+  .widgettitle .arhiv {
+    font-size: 12px;
+    float: right;
+    padding: 5px 7px;
+    margin-top: 16px; }
+  .widgettitle i.fa {
+    font-size: 20px;
+    color: #b07b37; }
+  .widgettitle h3 {
+    display: inline-block;
+    color: #3b92c4;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 54px;
+    font-family: 'vitaz';
+    margin-bottom: 20px; }
+    @media (max-width: 750px) {
+      .widgettitle h3 {
+        font-size: 40px;
+        line-height: 40px;
+        max-width: 80%; } }
+    .widgettitle h3 a {
+      font-family: 'vitaz';
+      color: #3b92c4;
+      border-bottom: 1px solid #3b92c4; }
+    .widgettitle h3 a.rsswidget:first-child {
+      border-bottom: none; }
+
+/* ╨Ь╨░╤В╨╡╤А╨╕╨░╨╗ */
+.video {
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+  display: block;
+  padding: 0px 5px;
+  float: right;
+  margin-left: 10px; }
+  .video:hover {
+    background-color: brown;
+    color: #fff !important; }
+
+#mpcth_content_wrap .menu {
+  font-size: 20px;
+  line-height: normal; }
+#mpcth_content_wrap p {
+  text-align: justify; }
+
+.videometa {
+  border-left: 1px solid #ddd7c6;
+  margin-left: 10px;
+  padding-left: 10px; }
+
+.mpcth-post-meta {
+  padding-bottom: 15px;
+  display: block !important; }
+  .mpcth-post-meta time {
+    margin-right: 15px; }
+  .mpcth-post-meta .mpcth-static-text,
+  .mpcth-post-meta .mpcth-author {
+    display: none; }
+  .mpcth-post-meta .videometa {
+    float: right;
+    border: none; }
+
+/* thumbnail */
+.mpcth-post-thumbnail {
+  margin-bottom: 10px; }
+  .mpcth-post-thumbnail a.left {
+    float: left;
+    margin-right: 15px; }
+  .mpcth-post-thumbnail a.right {
+    float: right;
+    margin-left: 15px; }
+
+#mpcth_main_container #mpcth_archive_header {
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-top: 0; }
+
+/* SIDEBAR */
+.mpcth-sidebar-right #mpcth_sidebar {
+  float: right;
+  margin-left: -2px; }
+  .mpcth-sidebar-right #mpcth_sidebar .mpcth-sidebar-arrow:after, .mpcth-sidebar-right #mpcth_sidebar .mpcth-sidebar-arrow:before {
+    left: 0;
+    margin-left: -12px;
+    border-right: 12px solid #ddd7c6;
+    border-left: 0 solid transparent; }
+  .mpcth-sidebar-right #mpcth_sidebar .mpcth-sidebar-arrow:after {
+    left: 1px;
+    border-right: 12px solid #fff; }
+
+.mpcth-read-more {
+  background-color: #3b92c4 !important;
+  color: #fff !important; }
+  .mpcth-read-more:hover {
+    background-color: #b07b37 !important; }
+
+article.category-duhovenstvo {
+  padding: 10px 0 !important;
+  margin: 0 !important;
+  border: none !important; }
+
+.mpcth-post-tags {
+  margin-bottom: 15px; }
+
+img.attachment-thumb {
+  max-width: 276px !important; }
+
+/* ╨С╨░╨╜╨╜╨╡╤А╤Л */
+.banner img {
+  width: 100%;
+  height: auto; }
+
+article.category-duhovenstvo .mpcth-post-thumbnail {
+  width: 250px;
+  float: left;
+  margin-right: 10px; }
+article.category-duhovenstvo .related_posts,
+article.category-duhovenstvo .mpcth-post-meta {
+  display: none; }
+
+article.category-duhovenstvo time,
+article.category-duhovenstvo .mpcth-static-text,
+article.category-duhovenstvo .date,
+article.category-svyatyni-eparhii time,
+article.category-svyatyni-eparhii .mpcth-static-text,
+article.category-svyatyni-eparhii .date,
+.category-raspisanie-bogosluzhenij time,
+.category-raspisanie-bogosluzhenij .mpcth-static-text,
+.category-raspisanie-bogosluzhenij .date,
+.category-pamyatnye-mesta time,
+.category-pamyatnye-mesta .mpcth-static-text,
+.category-pamyatnye-mesta .date {
+  display: none; }
+
+.allnews {
+  color: #f6f9fb; }
+  .allnews a {
+    display: inline-block;
+    margin-right: 15px; }
+
+#news2 .item {
+  margin: 0 10px; }
+#news2 .owl-controls {
+  position: absolute;
+  right: 0;
+  top: -50px; }
+#news2 .owl-buttons div {
+  display: inline-block;
+  margin-left: 10px;
+  background-color: #3b92c4;
+  padding: 7px 10px;
+  border-radius: 3px;
+  color: #fff; }
+  #news2 .owl-buttons div:hover {
+    background-color: #b07b37; }
+#news2 .hidden {
+  display: none; }
+
+#owl-demo .owl-controls {
+  position: absolute;
+  right: 0;
+  top: -50px; }
+#owl-demo .owl-buttons div {
+  display: inline-block;
+  margin-left: 10px;
+  background-color: #3b92c4;
+  padding: 7px 10px;
+  border-radius: 3px;
+  color: #fff; }
+  #owl-demo .owl-buttons div:hover {
+    background-color: #b07b37; }
+#owl-demo .hidden {
+  display: none; }
+
+.docsobor time {
+  display: none; }
+
+.category-dokumenty-arhierejskogo-sobora-2013-g .mpcth-post-meta,
+.category-dokumenty-arhierejskogo-sobora-2013-g .related_posts {
+  display: none !important; }
+
+ul.newsarhive {
+  list-style: none;
+  list-style: none; }
+  ul.newsarhive li.year {
+    color: #3b92c4; }
+  ul.newsarhive li {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: normal; }
+    ul.newsarhive li li {
+      color: #000;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: normal;
+      font-style: italic;
+      cursor: pointer; }
+      ul.newsarhive li li li {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: normal;
+        font-style: normal;
+        margin: 10px 0; }
+  ul.newsarhive ul {
+    list-style: disc; }
+  ul.newsarhive .items {
+    display: none; }
+
+.download-attachments .download-title {
+  display: none; }
+
+#mpcth_content .submenupage {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  #mpcth_content .submenupage > li {
+    display: none; }
+    #mpcth_content .submenupage > li.current_page_item {
+      display: block; }
+      #mpcth_content .submenupage > li.current_page_item > a {
+        display: none; }
+      #mpcth_content .submenupage > li.current_page_item > ul a {
+        font-size: 20px; }
+
+.mpcth-post-header .mpcth-post-pagination {
+  display: none; }
+
+.archive.category
+#mpcth_content.mpcth-blog-layout-small
+article.mpcth-post.format-video .mpcth-post-thumbnail {
+  float: none;
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

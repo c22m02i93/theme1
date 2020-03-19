@@ -1,0 +1,47 @@
+{% set current_language = languages[ current_language_code ] %}
+<div class="mpcth-wpml-flags-language-switcher">
+    <ul class="mpcth-wpml-dropdown">
+
+        <li class="mpcth-wpml-item mpcth-wpml-item-current">
+            <a href="#">
+                {%- if current_language.flag_url -%}
+                    <img class="{{ css_classes_flag }}" src="{{ current_language.flag_url }}"
+                         alt="{{ current_language_code }}" title="{{ current_language.flag_title }}">
+                {%- endif -%}
+
+                {%- if current_language.display_name or current_language.native_name -%}
+                    {%- set current_language_name = current_language.display_name|default(current_language.native_name) -%}
+                    <span class="mpcth-wpml-name-display">{{- current_language_name -}}</span>
+                {%- endif -%}
+            </a>
+
+            <ul class="mpcth-wpml-sub-dropdown">
+                {% for language in languages if not language.is_current %}
+
+                    <li class="mpcth-wpml-item">
+                        <a href="{{ language.url }}" class="mpcth-wpml-item-link">
+                            {%- if language.flag_url -%}
+                                <img class="mpcth-wpml-flag" src="{{ language.flag_url }}"
+                                     alt="{{ language.code }}" title="{{ language.flag_title }}">
+                            {%- endif -%}
+
+                            {%- if language.native_name -%}
+                                <span class="mpcth-wpml-name-native">{{ language.native_name }}</span>
+                            {%- endif -%}
+                            {%- if language.display_name -%}
+                                <span class="mpcth-wpml-name-display">
+									{%- if language.native_name -%}
+                                        <span class="mpcth-wpml-name-bracket"> (</span>{%- endif -%}{{- language.display_name -}}{%- if language.native_name -%}<span class="mpcth-wpml-name-bracket">)</span>
+                                    {%- endif -%}
+								</span>
+                            {%- endif -%}
+                        </a>
+                    </li>
+
+                {% endfor %}
+            </ul>
+
+        </li>
+
+    </ul>
+</div>

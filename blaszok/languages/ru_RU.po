@@ -1,0 +1,3097 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Blaszok\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-11 09:44+0000\n"
+"POT-Revision-Date: Fri Jul 29 2016 10:36:27 GMT+0200 (Środkowoeuropejski "
+"czas letni)\n"
+"PO-Revision-Date: 2019-10-20 09:51+0300\n"
+"Last-Translator: ddfdfd dfdfd <mateusz.s@mpcreation.net>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Loco-Version: 2.2.0; wp-5.0\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: 404.php:28
+msgid "404 Error"
+msgstr ""
+
+#: 404.php:35 archive.php:162 author.php:91 category.php:173 index.php:98
+#: search.php:86 single-mpc_portfolio.php:93 single.php:123 tag.php:93
+#: taxonomy-mpc_portfolio_cat.php:92 template-blog.php:165
+#: template-portfolio.php:180
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+
+#: archive.php:61 category.php:65
+msgid "Archives"
+msgstr ""
+
+#: archive.php:63 archive.php:65 archive.php:67 category.php:67 category.php:69
+#: category.php:71
+msgid " for "
+msgstr ""
+
+#: archive.php:142 author.php:73 category.php:153 index.php:80 search.php:68
+#: tag.php:75 taxonomy-mpc_portfolio_cat.php:74 template-blog.php:145
+msgid "Continue Reading"
+msgstr ""
+
+#: archive.php:152 author.php:81 category.php:163 index.php:88 search.php:76
+#: single-mpc_portfolio.php:86 single.php:116 tag.php:83
+#: taxonomy-mpc_portfolio_cat.php:82 template-blog.php:155
+#: template-portfolio.php:173
+msgid "Nothing Found"
+msgstr ""
+
+#: author.php:33
+msgid "All posts by "
+msgstr ""
+
+#: comments.php:21 functions.php:1107
+msgid "0 comments"
+msgstr ""
+
+#: comments.php:21 functions.php:1107
+msgid "1 comment"
+msgstr ""
+
+#: comments.php:21 functions.php:1107
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: comments.php:37
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:38
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:42
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:48 functions.php:417
+msgid "NAME"
+msgstr ""
+
+#: comments.php:49 functions.php:418
+msgid "EMAIL"
+msgstr ""
+
+#: comments.php:50 functions.php:419
+msgid "WEBSITE"
+msgstr ""
+
+#: comments.php:51 functions.php:420
+msgid "MESSAGE"
+msgstr ""
+
+#: comments.php:63
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:64
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:65
+msgid "- Cancel Reply"
+msgstr ""
+
+#: comments.php:66
+msgid "Leave a Comment"
+msgstr ""
+
+#: footer.php:29
+msgid "Display extended footer"
+msgstr ""
+
+#: footer.php:43
+msgid "Display footer"
+msgstr ""
+
+#: functions.php:126
+msgid "Page "
+msgstr ""
+
+#: functions.php:183
+msgid "Blaszok theme"
+msgstr ""
+
+#: functions.php:183
+msgid "was successfully updated. Please go to"
+msgstr ""
+
+#: functions.php:183 panel/options-framework.php:158
+#: panel/options-framework.php:1510
+msgid "Theme Options"
+msgstr ""
+
+#: functions.php:425
+msgid "Years"
+msgstr ""
+
+#: functions.php:426
+msgid "Months"
+msgstr ""
+
+#: functions.php:427
+msgid "Weeks"
+msgstr ""
+
+#: functions.php:428
+msgid "Days"
+msgstr ""
+
+#: functions.php:429
+msgid "Hours"
+msgstr ""
+
+#: functions.php:430
+msgid "Minutes"
+msgstr ""
+
+#: functions.php:431
+msgid "Seconds"
+msgstr ""
+
+#: functions.php:432
+msgid "Year"
+msgstr ""
+
+#: functions.php:433
+msgid "Month"
+msgstr ""
+
+#: functions.php:434
+msgid "Week"
+msgstr ""
+
+#: functions.php:435
+msgid "Day"
+msgstr ""
+
+#: functions.php:436
+msgid "Hour"
+msgstr ""
+
+#: functions.php:437
+msgid "Minute"
+msgstr ""
+
+#: functions.php:438
+msgid "Second"
+msgstr ""
+
+#: functions.php:511
+msgid "Main Header Area"
+msgstr ""
+
+#: functions.php:512
+msgid "This is a standard header area."
+msgstr ""
+
+#: functions.php:526
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:527
+msgid "This is a standard sidebar."
+msgstr ""
+
+#: functions.php:541
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:542
+msgid "This is a mega menu."
+msgstr ""
+
+#: functions.php:556
+msgid "Smart Search"
+msgstr ""
+
+#: functions.php:557
+msgid "This is a smart search."
+msgstr ""
+
+#: functions.php:571
+msgid "Main Footer"
+msgstr ""
+
+#: functions.php:572
+msgid "This is a standard footer."
+msgstr ""
+
+#: functions.php:586 panel/admin-options.php:1066 panel/admin-options.php:2329
+msgid "Extended Footer"
+msgstr ""
+
+#: functions.php:587
+msgid "This is an extended footer."
+msgstr ""
+
+#: functions.php:602
+msgid "Main Navigation Menu"
+msgstr ""
+
+#: functions.php:603
+msgid "Mobile Navigation Menu"
+msgstr ""
+
+#: functions.php:608
+msgid "Secondary Navigation Menu"
+msgstr ""
+
+#: functions.php:613
+msgid "Copyright Menu"
+msgstr ""
+
+#: functions.php:754
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:754
+msgid "[Edit]"
+msgstr ""
+
+#: functions.php:767
+msgid "at"
+msgstr ""
+
+#: functions.php:781
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:820 woocommerce/loop/pagination.php:21
+msgid "Load more"
+msgstr ""
+
+#: functions.php:1035
+msgid "Sign up for our newsletter"
+msgstr ""
+
+#: functions.php:1092
+msgid "Posted on"
+msgstr ""
+
+#: functions.php:1093
+msgid " by"
+msgstr ""
+
+#: functions.php:1098 single.php:77
+msgid ", "
+msgstr ""
+
+#: functions.php:1102
+msgid "in"
+msgstr ""
+
+#: functions.php:1106
+msgid "View post comments"
+msgstr ""
+
+#: functions.php:1341
+msgid "Sold Out"
+msgstr ""
+
+#: functions.php:1372
+msgid "New"
+msgstr ""
+
+#: functions.php:1415
+msgid "From: "
+msgstr ""
+
+#: functions.php:1493
+msgctxt "woo_breadcrumbs"
+msgid "Shop"
+msgstr ""
+
+#: functions.php:1550
+msgid "View"
+msgstr ""
+
+#: functions.php:1557 template-portfolio.php:90 template-portfolio.php:106
+msgid "All"
+msgstr ""
+
+#: functions.php:1601 header.php:366 panel/admin-options.php:186
+msgid "Subtotal:"
+msgstr ""
+
+#: functions.php:1664
+msgid "Unit Price"
+msgstr ""
+
+#: functions.php:1665
+msgid "Quantity"
+msgstr ""
+
+#: functions.php:1668
+msgid "Variation"
+msgstr ""
+
+#: functions.php:1676
+msgid "No products in the cart."
+msgstr ""
+
+#: functions.php:1680
+msgid "Cart Subtotal"
+msgstr ""
+
+#: header.php:380
+msgid "Menu"
+msgstr ""
+
+#: header.php:388 product-searchform.php:17 searchform.php:16
+msgid "Search..."
+msgstr ""
+
+#: header.php:392 product-searchform.php:18 searchform.php:17
+#: panel/admin-options.php:2026 panel/admin-options.php:2061
+msgid "Search"
+msgstr ""
+
+#: header.php:432
+msgid "-&nbsp;&nbsp;&nbsp;OR&nbsp;&nbsp;&nbsp;-"
+msgstr ""
+
+#: header.php:433
+msgid "Search for products"
+msgstr ""
+
+#: header.php:439
+msgid "Find my items"
+msgstr ""
+
+#: page.php:44 template-fullwidth-with-sidebar.php:51
+msgid "Shopping Cart"
+msgstr ""
+
+#: page.php:46 template-fullwidth-with-sidebar.php:53
+#: woocommerce/cart/cart.php:21
+msgid "Checkout Details"
+msgstr ""
+
+#: page.php:48 template-fullwidth-with-sidebar.php:55
+#: woocommerce/cart/cart.php:23
+msgid "Order Complete"
+msgstr ""
+
+#: search.php:31
+msgid "Search results for "
+msgstr ""
+
+#: single.php:80
+msgid "Tagged as "
+msgstr ""
+
+#: tag.php:34 taxonomy-mpc_portfolio_cat.php:33
+msgid "Archives for "
+msgstr ""
+
+#. Name of the template
+msgid "Blog"
+msgstr ""
+
+#. Name of the template
+msgid "Full width with sidebar"
+msgstr ""
+
+#. Name of the template
+msgid "Full width"
+msgstr ""
+
+#. Name of the template
+msgid "Lookbook"
+msgstr ""
+
+#: panel/admin-options.php:1219
+msgid "Maintenance Page"
+msgstr ""
+
+#. Name of the template
+msgid "Portfolio"
+msgstr ""
+
+#: template-portfolio.php:66
+msgid "Order by:"
+msgstr ""
+
+#: template-portfolio.php:69 template-portfolio.php:75
+msgid "Date"
+msgstr ""
+
+#: template-portfolio.php:70 template-portfolio.php:76
+#: autoimport/custom_metaboxes.php:770 autoimport/custom_metaboxes.php:1174
+msgid "Name"
+msgstr ""
+
+#: template-portfolio.php:71 template-portfolio.php:77
+msgid "Shuffle"
+msgstr ""
+
+#: template-portfolio.php:81
+msgid "Filter by:"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:281 panel/admin-options.php:605
+#: panel/admin-options.php:2072
+msgid "Sidebar"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:285
+msgid "Custom Sidebar Position"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:288
+msgid ""
+"Check this if you want to specify custom position for this post sidebar."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:294
+msgid "Sidebar Position"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:297
+msgid "Select the position of sidebar for this single post."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:310
+msgid "Left"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:311
+msgid "None"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:312
+msgid "Right"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:542
+msgid "Default"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:543 panel/admin-options.php:231
+msgid "Fullwidth"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:544 panel/admin-options.php:232
+msgid "Boxed"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:545 panel/admin-options.php:233
+msgid "Floating Boxed"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:637
+msgid "Lightbox Settings"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:641 autoimport/custom_metaboxes.php:645
+msgid "Enable Lightbox"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:644
+msgid "Check this to enable lightbox for current post."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:650
+msgid "Lightbox Type"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:653
+msgid "Select the kind of Lightbox you want to display for the post."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:675
+msgid "Lightbox Source"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:678
+msgid "Select the lightbox source from your Media Library."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:700
+msgid "Lightbox Source URL"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:703
+msgid ""
+"Specify the URL address of your lightbox (Vimeo, Youtube, Google Maps, etc)."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:721
+msgid "Source URL"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:760
+msgid "Portfolio Metadata"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:764
+msgid "Metadata"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:783 panel/admin-options.php:540
+msgid "Text"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:824
+msgid "Portfolio Settings"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:828
+msgid "Display Posts Number"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:831
+msgid "Specify the number of portfolio items displayed."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:835
+msgid "Posts"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:842
+msgid "Portfolio Columns"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:845
+msgid "Select the number of portfolio columns."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:849 autoimport/custom_metaboxes.php:953
+msgid "Columns"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:865
+msgid "Enable Category Filters"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:868
+msgid ""
+"Select this if you want to display category filter at the top of your page."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:869
+msgid "Enable"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:874
+msgid "Limit Visible Categories"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:877
+msgid ""
+"Select the categories for posts you wish to display. Only the posts that "
+"contains at least one of selected category will be displayed. Selecting "
+"<em>None</em> will show all posts."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:930
+msgid "Blog Columns"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:949
+msgid "Select the number of blog columns."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1039
+msgid "Post Type: Audio"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1043
+msgid "Audio Type"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1046
+msgid "Select the audio type you want to show as the post thumbnail."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1048 autoimport/custom_metaboxes.php:1456
+msgid "Upload"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1049 autoimport/custom_metaboxes.php:1455
+msgid "Embed"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1057
+msgid "MP3 File"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1060
+msgid "Select the MP3 file from you Media Library."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1077 autoimport/custom_metaboxes.php:1484
+msgid "OGG File"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1080 autoimport/custom_metaboxes.php:1487
+msgid "Select the OGG file from you Media Library."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1097 autoimport/custom_metaboxes.php:1504
+msgid "Embed Source"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1100 autoimport/custom_metaboxes.php:1507
+msgid "Specify the embed source."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1164
+msgid "Post Type: Chat"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1168
+msgid "Chat"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1187
+msgid "Message"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1233
+msgid "Post Type: Gallery"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1237
+msgid "Gallery Images"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1290
+msgid "Post Type: Link"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1294
+msgid "Link URL"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1297
+msgid "Specify the URL to replace post title permalink."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1299
+msgid "URL"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1345
+msgid "Post Type: Quote"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1349
+msgid "Quote Text"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1352
+msgid "Specify the quote text."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1354
+msgid "Quote text"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1360
+msgid "Quote Author"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1363
+msgid "Specify the quote author."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1365
+msgid "Quote author"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1402
+msgid "Post Type: Status"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1406 autoimport/custom_metaboxes.php:1411
+msgid "Twitter Embed"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1409
+msgid "Specify the Twitter Embed code."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1446
+msgid "Post Type: Video"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1450
+msgid "Video Type"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1453
+msgid "Select the video type you want to show as the post thumbnail."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1464
+msgid "MP4 File"
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1467
+msgid "Select the MP4 file from you Media Library."
+msgstr ""
+
+#: autoimport/custom_metaboxes.php:1520
+msgid "Insert your embed code here..."
+msgstr ""
+
+#: panel/admin-options.php:33
+msgid "MPC Theme"
+msgstr ""
+
+#: panel/admin-options.php:146
+msgid "Sign up to newsletter"
+msgstr ""
+
+#: panel/admin-options.php:181
+msgid "Copyright MassivePixelCreation 2018"
+msgstr ""
+
+#: panel/admin-options.php:194
+msgid "Default ( Latin )"
+msgstr ""
+
+#: panel/admin-options.php:195
+msgid "Cyrillic"
+msgstr ""
+
+#: panel/admin-options.php:196
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: panel/admin-options.php:197
+msgid "Greek"
+msgstr ""
+
+#: panel/admin-options.php:198
+msgid "Greek Extended"
+msgstr ""
+
+#: panel/admin-options.php:199
+msgid "Latin Extended"
+msgstr ""
+
+#: panel/admin-options.php:200
+msgid "Vietnamese"
+msgstr ""
+
+#: panel/admin-options.php:237
+msgid "Logo, Menu, Search"
+msgstr ""
+
+#: panel/admin-options.php:238
+msgid "Logo, Search, Menu"
+msgstr ""
+
+#: panel/admin-options.php:239
+msgid "Menu, Center Logo, Search"
+msgstr ""
+
+#: panel/admin-options.php:240
+msgid "Menu, Top Logo, Search"
+msgstr ""
+
+#: panel/admin-options.php:241
+msgid "Logo, Right Menu, Search"
+msgstr ""
+
+#: panel/admin-options.php:242
+msgid "Menu, Search, Right Logo"
+msgstr ""
+
+#: panel/admin-options.php:243
+msgid "Logo, Center Menu & Search"
+msgstr ""
+
+#: panel/admin-options.php:247
+msgid "Newsletter, Socials, Menu"
+msgstr ""
+
+#: panel/admin-options.php:248
+msgid "Socials, Menu, Newsletter"
+msgstr ""
+
+#: panel/admin-options.php:249
+msgid "Menu, Newsletter, Socials"
+msgstr ""
+
+#: panel/admin-options.php:252
+msgid "Top"
+msgstr ""
+
+#: panel/admin-options.php:253
+msgid "Bottom"
+msgstr ""
+
+#: panel/admin-options.php:257 panel/options-sanitize.php:263
+msgid "Top Left"
+msgstr ""
+
+#: panel/admin-options.php:258 panel/options-sanitize.php:264
+msgid "Top Center"
+msgstr ""
+
+#: panel/admin-options.php:259 panel/options-sanitize.php:265
+msgid "Top Right"
+msgstr ""
+
+#: panel/admin-options.php:260
+msgid "Center Left"
+msgstr ""
+
+#: panel/admin-options.php:261
+msgid "Center Center"
+msgstr ""
+
+#: panel/admin-options.php:262
+msgid "Center Right"
+msgstr ""
+
+#: panel/admin-options.php:263 panel/options-sanitize.php:269
+msgid "Bottom Left"
+msgstr ""
+
+#: panel/admin-options.php:264 panel/options-sanitize.php:270
+msgid "Bottom Center"
+msgstr ""
+
+#: panel/admin-options.php:265 panel/options-sanitize.php:271
+msgid "Bottom Right"
+msgstr ""
+
+#: panel/admin-options.php:269 panel/admin-options.php:283
+#: panel/options-interface.php:156
+msgid "default"
+msgstr ""
+
+#: panel/admin-options.php:270
+msgid "slim"
+msgstr ""
+
+#: panel/admin-options.php:271
+msgid "center"
+msgstr ""
+
+#: panel/admin-options.php:275
+msgid "Full width thumbnails"
+msgstr ""
+
+#: panel/admin-options.php:276
+msgid "Full width thumbnails alter."
+msgstr ""
+
+#: panel/admin-options.php:277
+msgid "Small thumbnails"
+msgstr ""
+
+#: panel/admin-options.php:284
+msgid "gray"
+msgstr ""
+
+#: panel/admin-options.php:285
+msgid "gold"
+msgstr ""
+
+#: panel/admin-options.php:286
+msgid "dark"
+msgstr ""
+
+#: panel/admin-options.php:289
+msgid "custom"
+msgstr ""
+
+#: panel/admin-options.php:292 panel/admin-options.php:314
+msgid "none"
+msgstr ""
+
+#: panel/admin-options.php:293
+msgid "color"
+msgstr ""
+
+#: panel/admin-options.php:294
+msgid "custom background"
+msgstr ""
+
+#: panel/admin-options.php:295
+msgid "pattern background"
+msgstr ""
+
+#: panel/admin-options.php:315
+msgid "repeat"
+msgstr ""
+
+#: panel/admin-options.php:316
+msgid "repeat horizontally"
+msgstr ""
+
+#: panel/admin-options.php:317
+msgid "repeat vertically"
+msgstr ""
+
+#: panel/admin-options.php:321
+msgid "auto"
+msgstr ""
+
+#: panel/admin-options.php:322
+msgid "contain"
+msgstr ""
+
+#: panel/admin-options.php:323
+msgid "cover"
+msgstr ""
+
+#: panel/admin-options.php:327
+msgid "top left"
+msgstr ""
+
+#: panel/admin-options.php:328
+msgid "top right"
+msgstr ""
+
+#: panel/admin-options.php:329
+msgid "top center"
+msgstr ""
+
+#: panel/admin-options.php:330
+msgid "middle left"
+msgstr ""
+
+#: panel/admin-options.php:331
+msgid "middle right"
+msgstr ""
+
+#: panel/admin-options.php:332
+msgid "middle center"
+msgstr ""
+
+#: panel/admin-options.php:333
+msgid "bottom left"
+msgstr ""
+
+#: panel/admin-options.php:334
+msgid "bottom right"
+msgstr ""
+
+#: panel/admin-options.php:335
+msgid "bottom center"
+msgstr ""
+
+#: panel/admin-options.php:367
+msgid "General"
+msgstr ""
+
+#: panel/admin-options.php:375
+msgid "Fav Icon"
+msgstr ""
+
+#: panel/admin-options.php:380
+msgid "Enable Fav Icon"
+msgstr ""
+
+#: panel/admin-options.php:381
+msgid "Check this option to enable fav icon."
+msgstr ""
+
+#: panel/admin-options.php:389
+msgid "Upload Fav Icon"
+msgstr ""
+
+#: panel/admin-options.php:390
+msgid ""
+"Use the upload to upload your custom fav icon. To learn more about the Fav "
+"Icon please read <a href='http://en.wikipedia.org/wiki/Favicon' "
+"target='_blank'>this article</a>."
+msgstr ""
+
+#: panel/admin-options.php:398
+msgid "Google Analytics"
+msgstr ""
+
+#: panel/admin-options.php:403
+msgid "Enable Google Analytics"
+msgstr ""
+
+#: panel/admin-options.php:404
+msgid "Check this option to enable Google Analytics tracking at your website."
+msgstr ""
+
+#: panel/admin-options.php:412
+msgid "Google Analytics Code"
+msgstr ""
+
+#: panel/admin-options.php:413
+msgid ""
+"Insert your google analytics code, for more information read <a href="
+"\"https://support.google.com/analytics/bin/answer.py?"
+"hl=en&utm_medium=et&utm_campaign=en_us&utm_source=SetupChecklist&answer=1008080\">this</"
+"a>. Don't worry that your script tags where removed, they will be added "
+"automatically."
+msgstr ""
+
+#: panel/admin-options.php:422
+msgid "Demo Wizard"
+msgstr ""
+
+#: panel/admin-options.php:427
+msgid "Disable Demo Wizard"
+msgstr ""
+
+#: panel/admin-options.php:428
+msgid "Check this option to disable MPC Importer from main menu."
+msgstr ""
+
+#: panel/admin-options.php:436
+msgid "WPBakery Page Builder"
+msgstr ""
+
+#: panel/admin-options.php:441
+msgid "Enable WPBakery License Page"
+msgstr ""
+
+#: panel/admin-options.php:442
+msgid ""
+"Check this option if you <strong>own an individual license</strong> for "
+"WPBakery and want to use their <a href=\"https://wpbakery.com/features/"
+"template-library/\" target=\"_blank\">templates library</a>. After enabling "
+"& saving Massive Panel, refresh wp-admin page or go directly to <a href=\"/"
+"wp-admin/admin.php?page=vc-updater\">WPBakery Product License settings page</"
+"a>."
+msgstr ""
+
+#: panel/admin-options.php:450
+msgid "Fonts"
+msgstr ""
+
+#: panel/admin-options.php:458
+msgid "Font Family"
+msgstr ""
+
+#: panel/admin-options.php:463
+msgid "Heading Font"
+msgstr ""
+
+#: panel/admin-options.php:464
+msgid "Specify font used for all headings at your website."
+msgstr ""
+
+#: panel/admin-options.php:470 panel/admin-options.php:2163
+msgid "Content Font"
+msgstr ""
+
+#: panel/admin-options.php:471
+msgid "Specify font used for all text except headings."
+msgstr ""
+
+#: panel/admin-options.php:477
+msgid "Menu Font"
+msgstr ""
+
+#: panel/admin-options.php:478
+msgid "Specify font for menu and submenu links."
+msgstr ""
+
+#: panel/admin-options.php:486
+msgid "Font Size"
+msgstr ""
+
+#: panel/admin-options.php:491
+msgid "Base Font Size"
+msgstr ""
+
+#: panel/admin-options.php:492
+msgid "Specify a default font size at your website."
+msgstr ""
+
+#: panel/admin-options.php:502
+msgid "Font Subset"
+msgstr ""
+
+#: panel/admin-options.php:507
+msgid "Font Subset for your language"
+msgstr ""
+
+#: panel/admin-options.php:508
+msgid "Specify font subset loaded with your selected Google Fonts."
+msgstr ""
+
+#: panel/admin-options.php:517
+msgid "Elements"
+msgstr ""
+
+#: panel/admin-options.php:525
+msgid "Logo"
+msgstr ""
+
+#: panel/admin-options.php:530
+msgid "Use Text Logo"
+msgstr ""
+
+#: panel/admin-options.php:531
+msgid "Check it if you want to use text logo instead of an image."
+msgstr ""
+
+#: panel/admin-options.php:541
+msgid "Specify your site logo text."
+msgstr ""
+
+#: panel/admin-options.php:548
+msgid "Upload Logo"
+msgstr ""
+
+#: panel/admin-options.php:549
+msgid "Upload your default logo which will be displayed at all devices."
+msgstr ""
+
+#: panel/admin-options.php:556
+msgid "Upload Retina Logo"
+msgstr ""
+
+#: panel/admin-options.php:557
+msgid ""
+"Upload your retina logo to replace default logo at Retina ready devices."
+msgstr ""
+
+#: panel/admin-options.php:564
+msgid "Upload Mobile Logo"
+msgstr ""
+
+#: panel/admin-options.php:565
+msgid "Upload your mobile logo here (leave empty to use default logo)."
+msgstr ""
+
+#: panel/admin-options.php:572
+msgid "Upload Retina Mobile Logo"
+msgstr ""
+
+#: panel/admin-options.php:573
+msgid ""
+"Upload your retina mobile logo to replace mobile logo at Retina ready "
+"devices (leave empty to use default logo)."
+msgstr ""
+
+#: panel/admin-options.php:580
+msgid "Upload Sticky Logo"
+msgstr ""
+
+#: panel/admin-options.php:581
+msgid "Upload your sticky logo to replace default logo at Sticky Header."
+msgstr ""
+
+#: panel/admin-options.php:588
+msgid "Upload Sticky Retina Logo"
+msgstr ""
+
+#: panel/admin-options.php:589
+msgid ""
+"Upload your sticky retina logo to replace sticky logo at Retina ready "
+"devices."
+msgstr ""
+
+#: panel/admin-options.php:596
+msgid "Description"
+msgstr ""
+
+#: panel/admin-options.php:597
+msgid ""
+"Specify if the description (tagline) for your site should be displayed next "
+"to a logo."
+msgstr ""
+
+#: panel/admin-options.php:610
+msgid "Default Sidebar Position"
+msgstr ""
+
+#: panel/admin-options.php:611
+msgid "Set the default sidebar position for all pages."
+msgstr ""
+
+#: panel/admin-options.php:622
+msgid "Default Blog Post Sidebar Position"
+msgstr ""
+
+#: panel/admin-options.php:623
+msgid "Set the default sidebar position for all of blog posts."
+msgstr ""
+
+#: panel/admin-options.php:635
+msgid "Default Portfolio Post Sidebar Position"
+msgstr ""
+
+#: panel/admin-options.php:636
+msgid "Set the default sidebar position for all of portfolio posts."
+msgstr ""
+
+#: panel/admin-options.php:648
+msgid "Default Search Sidebar Position"
+msgstr ""
+
+#: panel/admin-options.php:649
+msgid "Set the default sidebar position for Search page."
+msgstr ""
+
+#: panel/admin-options.php:660
+msgid "Default Archive Sidebar Position"
+msgstr ""
+
+#: panel/admin-options.php:661
+msgid "Set the default sidebar position for Archive page."
+msgstr ""
+
+#: panel/admin-options.php:672
+msgid "Default 404 Error Sidebar Position"
+msgstr ""
+
+#: panel/admin-options.php:673
+msgid "Set the default sidebar position for 404 Error page."
+msgstr ""
+
+#: panel/admin-options.php:685
+msgid "Default Forum Sidebar Position"
+msgstr ""
+
+#: panel/admin-options.php:686
+msgid "Set the default sidebar position for forum page."
+msgstr ""
+
+#: panel/admin-options.php:700 panel/admin-options.php:1706
+msgid "Header"
+msgstr ""
+
+#: panel/admin-options.php:705
+msgid "Main Header Layout"
+msgstr ""
+
+#: panel/admin-options.php:706
+msgid "Choose one of main header layouts."
+msgstr ""
+
+#: panel/admin-options.php:713
+msgid "Enable Header Full Width"
+msgstr ""
+
+#: panel/admin-options.php:714
+msgid "Specify if you want to display header & menu in full width."
+msgstr ""
+
+#: panel/admin-options.php:720
+msgid "Disable Menu Indicators"
+msgstr ""
+
+#: panel/admin-options.php:721
+msgid "Specify if you want to display small indicators for multilevel menu."
+msgstr ""
+
+#: panel/admin-options.php:727
+msgid "Enable Mega Menu"
+msgstr ""
+
+#: panel/admin-options.php:728
+msgid ""
+"Specify if you want to display MegaMenu. If enabled, you will be able to "
+"specify "
+msgstr ""
+
+#: panel/admin-options.php:734
+msgid "Enable Search"
+msgstr ""
+
+#: panel/admin-options.php:735
+msgid "Specify if you want to display search in header."
+msgstr ""
+
+#: panel/admin-options.php:741
+msgid "Enable Smart Search"
+msgstr ""
+
+#: panel/admin-options.php:742
+msgid "Specify if you want to display smart search."
+msgstr ""
+
+#: panel/admin-options.php:748
+msgid "Enable Sticky Header"
+msgstr ""
+
+#: panel/admin-options.php:749
+msgid "Specify if you want to show sticky header at the top of page."
+msgstr ""
+
+#: panel/admin-options.php:757
+msgid "Sticky Header Offset"
+msgstr ""
+
+#: panel/admin-options.php:758
+msgid ""
+"Specify the sticky header offset. Bigger value will delay the switch to "
+"sticky value."
+msgstr ""
+
+#: panel/admin-options.php:768
+msgid "Enable Mobile Sticky Header"
+msgstr ""
+
+#: panel/admin-options.php:769
+msgid "Specify if you want to show sticky header at the top of page on mobile."
+msgstr ""
+
+#: panel/admin-options.php:775
+msgid "Enable Simple Menu"
+msgstr ""
+
+#: panel/admin-options.php:776
+msgid ""
+"Specify if you want to display simple slide down mobile menu under the "
+"header. It will disable the side menu."
+msgstr ""
+
+#: panel/admin-options.php:784
+msgid "Enable Simple Menu Label"
+msgstr ""
+
+#: panel/admin-options.php:785
+msgid "Specify if you want to display \"Menu\" label for simple menu button."
+msgstr ""
+
+#: panel/admin-options.php:792
+msgid "Enable Simple Buttons"
+msgstr ""
+
+#: panel/admin-options.php:793
+msgid "Specify if you want to display simple buttons (only icon)."
+msgstr ""
+
+#: panel/admin-options.php:799
+msgid "Enable Vertical Center"
+msgstr ""
+
+#: panel/admin-options.php:800
+msgid "Specify if you want to center header vertically."
+msgstr ""
+
+#: panel/admin-options.php:806
+msgid "Header Padding"
+msgstr ""
+
+#: panel/admin-options.php:807
+msgid "Specify Header padding (top, right, bottom, left)."
+msgstr ""
+
+#: panel/admin-options.php:815 panel/admin-options.php:1810
+#: panel/admin-options.php:1845
+msgid "Secondary Header"
+msgstr ""
+
+#: panel/admin-options.php:820
+msgid "Enable Secondary Header"
+msgstr ""
+
+#: panel/admin-options.php:821
+msgid "Uncheck this option to disable secondary header."
+msgstr ""
+
+#: panel/admin-options.php:829
+msgid "Secondary Header Layout"
+msgstr ""
+
+#: panel/admin-options.php:830
+msgid "Choose one of secondary header layouts."
+msgstr ""
+
+#: panel/admin-options.php:838
+msgid "Secondary Header Position"
+msgstr ""
+
+#: panel/admin-options.php:839
+msgid "Choose secondary header position."
+msgstr ""
+
+#: panel/admin-options.php:847
+msgid "Enable Subscribe Form"
+msgstr ""
+
+#: panel/admin-options.php:848
+msgid "Uncheck this option to disable subscribe form."
+msgstr ""
+
+#: panel/admin-options.php:857
+msgid "Newsletter Text"
+msgstr ""
+
+#: panel/admin-options.php:858
+msgid "Specify your newsletter message."
+msgstr ""
+
+#: panel/admin-options.php:865
+msgid "Secondary Header Message"
+msgstr ""
+
+#: panel/admin-options.php:866
+msgid ""
+"Specify the message you want to display in place of subscribe form. Leave "
+"empty to display default subscribe form."
+msgstr ""
+
+#: panel/admin-options.php:873
+msgid "Enable Secondary Header Menu"
+msgstr ""
+
+#: panel/admin-options.php:874
+msgid "Check this option to enable secondary header menu."
+msgstr ""
+
+#: panel/admin-options.php:881
+msgid "Secondary Header Padding"
+msgstr ""
+
+#: panel/admin-options.php:882
+msgid "Specify Secondary Header padding (top, right, bottom, left)."
+msgstr ""
+
+#: panel/admin-options.php:890
+msgid "Disable YITH WooCommerce Wishlist Link"
+msgstr ""
+
+#: panel/admin-options.php:891
+msgid ""
+"Check this option to remove YITH WooCommerce Wishlist link from Secondary "
+"Header."
+msgstr ""
+
+#: panel/admin-options.php:902
+msgid "Disable WooCommerce My Account/Login Link"
+msgstr ""
+
+#: panel/admin-options.php:903
+msgid ""
+"Check this option to remove WooCommerce My Account/Login Link from Secondary "
+"Header."
+msgstr ""
+
+#: panel/admin-options.php:914
+msgid "Enable WPML Language Switcher"
+msgstr ""
+
+#: panel/admin-options.php:915
+msgid "Check this option to enable WPML Language Switcher in Secondary Header."
+msgstr ""
+
+#: panel/admin-options.php:925
+msgid "Disable WPML Language Switcher Vanila Select Box Look"
+msgstr ""
+
+#: panel/admin-options.php:926
+msgid ""
+"Check this option to change default demo WPML language switcher look into "
+"dropdown with flags support."
+msgstr ""
+
+#: panel/admin-options.php:936
+msgid "Enable WPML Language Switcher Native Names"
+msgstr ""
+
+#: panel/admin-options.php:937
+msgid "Check this option to display native language names inside switcher."
+msgstr ""
+
+#: panel/admin-options.php:946
+msgid "Enable WPML Language Switcher Flags"
+msgstr ""
+
+#: panel/admin-options.php:947
+msgid "Check this option to display national flags in switcher."
+msgstr ""
+
+#: panel/admin-options.php:957
+msgid "Enable WPML Currency Switcher"
+msgstr ""
+
+#: panel/admin-options.php:958
+msgid "Check this option to enable WPML Currency Switcher in Secondary Header."
+msgstr ""
+
+#: panel/admin-options.php:968
+msgid "Disable WPML Currency Switcher Vanila Select Box Look"
+msgstr ""
+
+#: panel/admin-options.php:969
+msgid ""
+"Check this option to change default demo WPML language switcher look into "
+"dropdown."
+msgstr ""
+
+#: panel/admin-options.php:978
+msgid "Switch Into Currency Code Format"
+msgstr ""
+
+#: panel/admin-options.php:979
+msgid ""
+"Check this option to change WPML Currency Switcher format into currency "
+"code, in example \"($) USD\"."
+msgstr ""
+
+#: panel/admin-options.php:992 panel/admin-options.php:1856
+msgid "Header Widget Area"
+msgstr ""
+
+#: panel/admin-options.php:997
+msgid "Enable Header Widget Area"
+msgstr ""
+
+#: panel/admin-options.php:998
+msgid "Uncheck this option to disable header widget area."
+msgstr ""
+
+#: panel/admin-options.php:1006
+msgid "Header Widget Area Columns Number"
+msgstr ""
+
+#: panel/admin-options.php:1007
+msgid "Specify default number of header widget area columns."
+msgstr ""
+
+#: panel/admin-options.php:1017 panel/admin-options.php:2207
+msgid "Footer"
+msgstr ""
+
+#: panel/admin-options.php:1022
+msgid "Enable Footer"
+msgstr ""
+
+#: panel/admin-options.php:1023
+msgid "Uncheck this option to disable footer."
+msgstr ""
+
+#: panel/admin-options.php:1031
+msgid "Footer Columns Number"
+msgstr ""
+
+#: panel/admin-options.php:1032
+msgid "Specify default number of footer columns."
+msgstr ""
+
+#: panel/admin-options.php:1040
+msgid "Enable Toggle Footer"
+msgstr ""
+
+#: panel/admin-options.php:1041
+msgid "Uncheck this option to disable mobile toggle footer button."
+msgstr ""
+
+#: panel/admin-options.php:1048
+msgid "Back To Top Position"
+msgstr ""
+
+#: panel/admin-options.php:1049
+msgid "Specify the position of \"Back to Top\" button."
+msgstr ""
+
+#: panel/admin-options.php:1056
+msgid "Footer Padding"
+msgstr ""
+
+#: panel/admin-options.php:1057
+msgid "Specify Footer padding (top, right, bottom, left)."
+msgstr ""
+
+#: panel/admin-options.php:1071
+msgid "Enable Extended Footer"
+msgstr ""
+
+#: panel/admin-options.php:1072
+msgid "Uncheck this option to disable extended footer."
+msgstr ""
+
+#: panel/admin-options.php:1080
+msgid "Extended Footer Columns Number"
+msgstr ""
+
+#: panel/admin-options.php:1081
+msgid "Specify default number of extended footer columns."
+msgstr ""
+
+#: panel/admin-options.php:1089
+msgid "Enable Toggle Extended Footer"
+msgstr ""
+
+#: panel/admin-options.php:1090
+msgid "Uncheck this option to disable mobile toggle extended footer button."
+msgstr ""
+
+#: panel/admin-options.php:1097
+msgid "Extended Footer Padding"
+msgstr ""
+
+#: panel/admin-options.php:1098
+msgid "Extended Specify Footer padding (top, right, bottom, left)."
+msgstr ""
+
+#: panel/admin-options.php:1107
+msgid "Copyrights"
+msgstr ""
+
+#: panel/admin-options.php:1112
+msgid "Enable Copyrights & Socials"
+msgstr ""
+
+#: panel/admin-options.php:1113
+msgid ""
+"Uncheck this option to disable copyrights/socials section below the footer."
+msgstr ""
+
+#: panel/admin-options.php:1121
+msgid "Copyright Text"
+msgstr ""
+
+#: panel/admin-options.php:1122
+msgid "Specify your copyrights."
+msgstr ""
+
+#: panel/admin-options.php:1129
+msgid "Enable Copyright Menu"
+msgstr ""
+
+#: panel/admin-options.php:1130
+msgid "Check this option to enable Copyright menu."
+msgstr ""
+
+#: panel/admin-options.php:1137
+msgid "Copyright Padding"
+msgstr ""
+
+#: panel/admin-options.php:1138
+msgid "Specify Copyright padding (top, right, bottom, left)."
+msgstr ""
+
+#: panel/admin-options.php:1147
+msgid "Social Networks"
+msgstr ""
+
+#: panel/admin-options.php:1152
+msgid "Open in New Tab"
+msgstr ""
+
+#: panel/admin-options.php:1153
+msgid "Check this option to open links in new tabs."
+msgstr ""
+
+#: panel/admin-options.php:1160
+msgid "Socials"
+msgstr ""
+
+#: panel/admin-options.php:1161
+msgid "Select the socials you want to display."
+msgstr ""
+
+#: panel/admin-options.php:1170
+msgid "Specify the URL to your account."
+msgstr ""
+
+#: panel/admin-options.php:1179
+msgid "Visuals"
+msgstr ""
+
+#: panel/admin-options.php:1187 panel/admin-options.php:1190
+msgid "Colors"
+msgstr ""
+
+#: panel/admin-options.php:1194
+msgid "Main Color"
+msgstr ""
+
+#: panel/admin-options.php:1195
+msgid "Specify main color for the theme."
+msgstr ""
+
+#: panel/admin-options.php:1204
+msgid "Display"
+msgstr ""
+
+#: panel/admin-options.php:1209
+msgid "Enable Maintenance Mode"
+msgstr ""
+
+#: panel/admin-options.php:1210
+msgid "Check this option if you want to enable maintenance mode."
+msgstr ""
+
+#: panel/admin-options.php:1220
+msgid "Specify the landing page for maintenance mode."
+msgstr ""
+
+#: panel/admin-options.php:1228
+msgid "Disable Responsive"
+msgstr ""
+
+#: panel/admin-options.php:1229
+msgid "Check this option if you want to disable responsive layout."
+msgstr ""
+
+#: panel/admin-options.php:1235
+msgid "Archive & Category Style"
+msgstr ""
+
+#: panel/admin-options.php:1236
+msgid "Select the posts style for Archive & Category pages."
+msgstr ""
+
+#: panel/admin-options.php:1244
+msgid "Large Archive Thumbnails"
+msgstr ""
+
+#: panel/admin-options.php:1245
+msgid ""
+"Check this option if you want to display archive thumbnails in fullwidth."
+msgstr ""
+
+#: panel/admin-options.php:1251
+msgid "Disable Breadcrumbs"
+msgstr ""
+
+#: panel/admin-options.php:1252
+msgid "Check this option if you want to disable breadcrumbs display."
+msgstr ""
+
+#: panel/admin-options.php:1259
+msgid "Enable Excerpt Trim"
+msgstr ""
+
+#: panel/admin-options.php:1260
+msgid "Check this option if you want to enable excerpt trim in posts."
+msgstr ""
+
+#: panel/admin-options.php:1266
+msgid "Enable Sticky Footer"
+msgstr ""
+
+#: panel/admin-options.php:1267
+msgid "Check this option if you want footer stick to bottom on short pages."
+msgstr ""
+
+#: panel/admin-options.php:1273
+msgid "Theme Layout Type"
+msgstr ""
+
+#: panel/admin-options.php:1274
+msgid ""
+"Specify if you want to display the page as boxed, floating boxed or "
+"fullwidth site."
+msgstr ""
+
+#: panel/admin-options.php:1281
+msgid "Skin"
+msgstr ""
+
+#: panel/admin-options.php:1282
+msgid "Select theme skin."
+msgstr ""
+
+#: panel/admin-options.php:1290
+msgid "Enable Author Box"
+msgstr ""
+
+#: panel/admin-options.php:1291
+msgid "Check this option if you want to display author box at all posts."
+msgstr ""
+
+#: panel/admin-options.php:1297
+msgid "Disable Mobile Sliders Navigation"
+msgstr ""
+
+#: panel/admin-options.php:1298
+msgid ""
+"Uncheck this option if you want to display sliders navigation on mobile "
+"devices."
+msgstr ""
+
+#: panel/admin-options.php:1305
+msgid "Slider Revolution Navigation Arrows in Blaszok Style "
+msgstr ""
+
+#: panel/admin-options.php:1306
+msgid ""
+"Check this option if you want to overwrite Slider Revolution arrows to style "
+"seen on previews and in other carousels."
+msgstr ""
+
+#: panel/admin-options.php:1313
+msgid "Disable Buttons Border Color"
+msgstr ""
+
+#: panel/admin-options.php:1314
+msgid "Check this option if you want to disable buttons border color."
+msgstr ""
+
+#: panel/admin-options.php:1322
+msgid "Background"
+msgstr ""
+
+#: panel/admin-options.php:1327
+msgid "Type"
+msgstr ""
+
+#: panel/admin-options.php:1328 panel/admin-options.php:1399
+msgid "Select background type for your site."
+msgstr ""
+
+#: panel/admin-options.php:1338
+msgid "Background Color"
+msgstr ""
+
+#: panel/admin-options.php:1339
+msgid "Specify background color."
+msgstr ""
+
+#: panel/admin-options.php:1346 panel/admin-options.php:1384
+#: panel/admin-options.php:1722 panel/admin-options.php:1872
+#: panel/admin-options.php:2223 panel/admin-options.php:2345
+msgid "Background Image"
+msgstr ""
+
+#: panel/admin-options.php:1347 panel/admin-options.php:1723
+#: panel/admin-options.php:1873 panel/admin-options.php:2224
+#: panel/admin-options.php:2346
+msgid "Upload your background image here."
+msgstr ""
+
+#: panel/admin-options.php:1353 panel/admin-options.php:1729
+#: panel/admin-options.php:1879 panel/admin-options.php:2230
+#: panel/admin-options.php:2352
+msgid "Repeat Background"
+msgstr ""
+
+#: panel/admin-options.php:1354 panel/admin-options.php:1730
+#: panel/admin-options.php:1880 panel/admin-options.php:2231
+#: panel/admin-options.php:2353
+msgid "Check this option if you want to use your custom background as pattern."
+msgstr ""
+
+#: panel/admin-options.php:1361
+msgid "Background Pattern"
+msgstr ""
+
+#: panel/admin-options.php:1362
+msgid "Choose background pattern for your site."
+msgstr ""
+
+#: panel/admin-options.php:1377
+msgid "Dropdowns Backgrounds"
+msgstr ""
+
+#: panel/admin-options.php:1385
+msgid "Upload your dropdown background image here."
+msgstr ""
+
+#: panel/admin-options.php:1391
+msgid "Paddings"
+msgstr ""
+
+#: panel/admin-options.php:1392
+msgid "Specify your dropdown padding."
+msgstr ""
+
+#: panel/admin-options.php:1398
+msgid "Alignment"
+msgstr ""
+
+#: panel/admin-options.php:1412
+msgid "WooCommerce"
+msgstr ""
+
+#: panel/admin-options.php:1417
+msgid "Products Number"
+msgstr ""
+
+#: panel/admin-options.php:1418
+msgid "Specify the products number you want to display in the \"Shop\" page."
+msgstr ""
+
+#: panel/admin-options.php:1424
+msgid "Masonry Shop"
+msgstr ""
+
+#: panel/admin-options.php:1425
+msgid "Check this option if you want to enable masonry on \"Shop\" page."
+msgstr ""
+
+#: panel/admin-options.php:1433
+msgid "Shop Load More"
+msgstr ""
+
+#: panel/admin-options.php:1434
+msgid "Check this option if you want to enable load more on \"Shop\" page."
+msgstr ""
+
+#: panel/admin-options.php:1449
+msgid "Shop Style"
+msgstr ""
+
+#: panel/admin-options.php:1450
+msgid "Choose one of shop styles."
+msgstr ""
+
+#: panel/admin-options.php:1459
+msgid "Shop Columns Number (Default style)"
+msgstr ""
+
+#: panel/admin-options.php:1460
+msgid "Specify default number of shop columns for default style."
+msgstr ""
+
+#: panel/admin-options.php:1468
+msgid "Shop Columns Number (Other styles)"
+msgstr ""
+
+#: panel/admin-options.php:1469
+msgid "Specify default number of shop columns for other styles."
+msgstr ""
+
+#: panel/admin-options.php:1477
+msgid "Enable New Product Badge"
+msgstr ""
+
+#: panel/admin-options.php:1478
+msgid ""
+"Check this option if you want to enable the New product badge at archive and "
+"single product page."
+msgstr ""
+
+#: panel/admin-options.php:1486
+msgid "Number of Days"
+msgstr ""
+
+#: panel/admin-options.php:1487
+msgid ""
+"Use this field to set number of days for the New badge to appear. It is "
+"counted from Publish Date, so you can manipulate each product individually "
+"on Edit Product"
+msgstr ""
+
+#: panel/admin-options.php:1494
+msgid "Enable Single Product Additional Features"
+msgstr ""
+
+#: panel/admin-options.php:1495
+msgid ""
+"Check this option to enable build-in WooCommerce 3.0+ features: Zoom, "
+"Lightbox, Gallery Slider. Please note that this will disable Blaszok "
+"thumbnails carousel for main image on single product."
+msgstr ""
+
+#: panel/admin-options.php:1503
+msgid "Enable Single Product Zoom"
+msgstr ""
+
+#: panel/admin-options.php:1504
+msgid "Check this option to enable WooCommerce Zoom for single product view."
+msgstr ""
+
+#: panel/admin-options.php:1512
+msgid "Enable Single Product Lightbox"
+msgstr ""
+
+#: panel/admin-options.php:1513
+msgid ""
+"Check this option to enable WooCommerce Lightbox for single product view."
+msgstr ""
+
+#: panel/admin-options.php:1521
+msgid "Products Slider Style"
+msgstr ""
+
+#: panel/admin-options.php:1522
+msgid "Choose one of products slider styles."
+msgstr ""
+
+#: panel/admin-options.php:1529
+msgid "Product Accordions"
+msgstr ""
+
+#: panel/admin-options.php:1530
+msgid ""
+"Check this option if you want to change tabs to accordions for products "
+"descriptions."
+msgstr ""
+
+#: panel/admin-options.php:1536 woocommerce/content-single-product.php:126
+#: woocommerce/content-single-product.php:134
+msgid "Size Guide"
+msgstr ""
+
+#: panel/admin-options.php:1537
+msgid "Check this option if you want to enable size guide for products."
+msgstr ""
+
+#: panel/admin-options.php:1545
+msgid "Size Guide Image"
+msgstr ""
+
+#: panel/admin-options.php:1546
+msgid "Upload your size guide image here."
+msgstr ""
+
+#: panel/admin-options.php:1552
+msgid "Disable Header Cart"
+msgstr ""
+
+#: panel/admin-options.php:1553
+msgid "Check this option if you want to disable the cart icon in the header."
+msgstr ""
+
+#: panel/admin-options.php:1562
+msgid "Replace Header \"SUBTOTAL\""
+msgstr ""
+
+#: panel/admin-options.php:1563
+msgid "Use this field to replace \"SUBTOTAL\" in the header cart button. "
+msgstr ""
+
+#: panel/admin-options.php:1570
+msgid "Disable Products \"Add to Cart\""
+msgstr ""
+
+#: panel/admin-options.php:1571
+msgid ""
+"Check this option if you want to disable \"Add to Cart\" in the products."
+msgstr ""
+
+#: panel/admin-options.php:1579
+msgid "Disable Products \"Price\""
+msgstr ""
+
+#: panel/admin-options.php:1580
+msgid "Check this option if you want to disable \"Price\" in the products."
+msgstr ""
+
+#: panel/admin-options.php:1587
+msgid "Disable Products Hover Effect"
+msgstr ""
+
+#: panel/admin-options.php:1588
+msgid ""
+"Check this option if you want to disable the hover effect for the products."
+msgstr ""
+
+#: panel/admin-options.php:1594
+msgid "Enable Related Products"
+msgstr ""
+
+#: panel/admin-options.php:1595
+msgid ""
+"Check this option if you want to enable automatic display of related "
+"products at single product page."
+msgstr ""
+
+#: panel/admin-options.php:1603
+msgid "Related Products Columns Number"
+msgstr ""
+
+#: panel/admin-options.php:1604
+msgid "Specify default number of shop columns for related products."
+msgstr ""
+
+#: panel/admin-options.php:1612
+msgid "Disable SKU display"
+msgstr ""
+
+#: panel/admin-options.php:1613
+msgid ""
+"Check this option if you want to disable the SKU display at single product "
+"page."
+msgstr ""
+
+#: panel/admin-options.php:1619
+msgid "Disable Categories display"
+msgstr ""
+
+#: panel/admin-options.php:1620
+msgid ""
+"Check this option if you want to disable the Categories display at single "
+"product page."
+msgstr ""
+
+#: panel/admin-options.php:1626
+msgid "Disable Tags display"
+msgstr ""
+
+#: panel/admin-options.php:1627
+msgid ""
+"Check this option if you want to disable the Tags display at single product "
+"page."
+msgstr ""
+
+#: panel/admin-options.php:1633
+msgid "Disable Share buttons"
+msgstr ""
+
+#: panel/admin-options.php:1634
+msgid ""
+"Check this option if you want to disable the Share buttons at single product "
+"page."
+msgstr ""
+
+#: panel/admin-options.php:1640
+msgid "\"Description\" Tab Label"
+msgstr ""
+
+#: panel/admin-options.php:1641
+msgid "Specify your custom label for product \"Description\" label."
+msgstr ""
+
+#: panel/admin-options.php:1647
+msgid "\"Additional Information\" Tab Label"
+msgstr ""
+
+#: panel/admin-options.php:1648
+msgid "Specify your custom label for product \"Additional Information\" label."
+msgstr ""
+
+#: panel/admin-options.php:1656
+msgid "Custom CSS"
+msgstr ""
+
+#: panel/admin-options.php:1661
+msgid "CSS"
+msgstr ""
+
+#: panel/admin-options.php:1662
+msgid "Insert your custom CSS."
+msgstr ""
+
+#: panel/admin-options.php:1668
+msgid "Overwrite Shortcodes Colors"
+msgstr ""
+
+#: panel/admin-options.php:1669
+msgid ""
+"Check this option if you want to overwrite shortcodes colors with the Main "
+"Color."
+msgstr ""
+
+#: panel/admin-options.php:1677
+msgid "Styles"
+msgstr ""
+
+#: panel/admin-options.php:1685
+msgid "Options"
+msgstr ""
+
+#: panel/admin-options.php:1690
+msgid "Use Advance Colors"
+msgstr ""
+
+#: panel/admin-options.php:1691
+msgid "Check this option if you want to use the below colors."
+msgstr ""
+
+#: panel/admin-options.php:1697
+msgid "Use Advance Font Sizes"
+msgstr ""
+
+#: panel/admin-options.php:1698
+msgid "Check this option if you want to use the below font sizes."
+msgstr ""
+
+#: panel/admin-options.php:1713 panel/admin-options.php:1863
+#: panel/admin-options.php:2214 panel/admin-options.php:2336
+msgid "Enable Background Image"
+msgstr ""
+
+#: panel/admin-options.php:1714
+msgid "Enable header background image support."
+msgstr ""
+
+#: panel/admin-options.php:1738 panel/admin-options.php:1888
+#: panel/admin-options.php:2239 panel/admin-options.php:2361
+msgid "Background Size"
+msgstr ""
+
+#: panel/admin-options.php:1739 panel/admin-options.php:1889
+#: panel/admin-options.php:2240 panel/admin-options.php:2362
+msgid "Select the background size."
+msgstr ""
+
+#: panel/admin-options.php:1747 panel/admin-options.php:1897
+#: panel/admin-options.php:2248 panel/admin-options.php:2370
+msgid "Background Align"
+msgstr ""
+
+#: panel/admin-options.php:1748 panel/admin-options.php:1898
+#: panel/admin-options.php:2249 panel/admin-options.php:2371
+msgid "Check this option if you want to specify background align."
+msgstr ""
+
+#: panel/admin-options.php:1756
+msgid "Header Background"
+msgstr ""
+
+#: panel/admin-options.php:1757
+msgid "Specify header background color."
+msgstr ""
+
+#: panel/admin-options.php:1763
+msgid "Header Border"
+msgstr ""
+
+#: panel/admin-options.php:1764
+msgid "Specify header border color."
+msgstr ""
+
+#: panel/admin-options.php:1771
+msgid "Header Font"
+msgstr ""
+
+#: panel/admin-options.php:1772
+msgid "Specify header font color."
+msgstr ""
+
+#: panel/admin-options.php:1779
+msgid "Header Active/Hover"
+msgstr ""
+
+#: panel/admin-options.php:1780
+msgid "Specify header active/hover color."
+msgstr ""
+
+#: panel/admin-options.php:1788
+msgid "Header Menu"
+msgstr ""
+
+#: panel/admin-options.php:1789
+msgid "Specify header menu font size."
+msgstr ""
+
+#: panel/admin-options.php:1798
+msgid "Header Button"
+msgstr ""
+
+#: panel/admin-options.php:1799
+msgid "Specify header button font size."
+msgstr ""
+
+#: panel/admin-options.php:1816
+msgid "Secondary Header Background"
+msgstr ""
+
+#: panel/admin-options.php:1817
+msgid "Specify secondary header background color."
+msgstr ""
+
+#: panel/admin-options.php:1823
+msgid "Secondary Header Border"
+msgstr ""
+
+#: panel/admin-options.php:1824
+msgid "Specify secondary header border color."
+msgstr ""
+
+#: panel/admin-options.php:1830
+msgid "Secondary Header Font"
+msgstr ""
+
+#: panel/admin-options.php:1831
+msgid "Specify secondary header font color."
+msgstr ""
+
+#: panel/admin-options.php:1837
+msgid "Secondary Header Active/Hover"
+msgstr ""
+
+#: panel/admin-options.php:1838
+msgid "Specify secondary header active/hover color."
+msgstr ""
+
+#: panel/admin-options.php:1846
+msgid "Specify secondary header font size."
+msgstr ""
+
+#: panel/admin-options.php:1864
+msgid "Enable Header Widget Area background image support."
+msgstr ""
+
+#: panel/admin-options.php:1906
+msgid "Header Widget Area Background"
+msgstr ""
+
+#: panel/admin-options.php:1907
+msgid "Specify header widget area background color."
+msgstr ""
+
+#: panel/admin-options.php:1913
+msgid "Header Widget Area Border"
+msgstr ""
+
+#: panel/admin-options.php:1914
+msgid "Specify header widget area border color."
+msgstr ""
+
+#: panel/admin-options.php:1920
+msgid "Header Widget Area Font"
+msgstr ""
+
+#: panel/admin-options.php:1921
+msgid "Specify header widget area font color."
+msgstr ""
+
+#: panel/admin-options.php:1927
+msgid "Header Widget Area Active/Hover"
+msgstr ""
+
+#: panel/admin-options.php:1928
+msgid "Specify header widget area active/hover color."
+msgstr ""
+
+#: panel/admin-options.php:1934
+msgid "Header Widget Area Heading Border"
+msgstr ""
+
+#: panel/admin-options.php:1935
+msgid "Specify header widget area heading border color."
+msgstr ""
+
+#: panel/admin-options.php:1942
+msgid "Header Widget Area Header"
+msgstr ""
+
+#: panel/admin-options.php:1943
+msgid "Specify header widget area header font size."
+msgstr ""
+
+#: panel/admin-options.php:1951
+msgid "Header Widget Area Content"
+msgstr ""
+
+#: panel/admin-options.php:1952
+msgid "Specify header widget area content font size."
+msgstr ""
+
+#: panel/admin-options.php:1960
+msgid "Header Widget Area Small"
+msgstr ""
+
+#: panel/admin-options.php:1961
+msgid "Specify header widget area small font size."
+msgstr ""
+
+#: panel/admin-options.php:1971
+msgid "Dropdowns"
+msgstr ""
+
+#: panel/admin-options.php:1977
+msgid "Dropdown Background"
+msgstr ""
+
+#: panel/admin-options.php:1978
+msgid "Specify dropdown background color."
+msgstr ""
+
+#: panel/admin-options.php:1984
+msgid "Dropdown Border"
+msgstr ""
+
+#: panel/admin-options.php:1985
+msgid "Specify dropdown border color."
+msgstr ""
+
+#: panel/admin-options.php:1991
+msgid "Dropdown Font"
+msgstr ""
+
+#: panel/admin-options.php:1992
+msgid "Specify dropdown font color."
+msgstr ""
+
+#: panel/admin-options.php:1998
+msgid "Dropdown Active/Hover"
+msgstr ""
+
+#: panel/admin-options.php:1999
+msgid "Specify dropdown active/hover color."
+msgstr ""
+
+#: panel/admin-options.php:2006
+msgid "Header Dropdown"
+msgstr ""
+
+#: panel/admin-options.php:2007
+msgid "Specify header dropdown font size."
+msgstr ""
+
+#: panel/admin-options.php:2015
+msgid "Secondary Header Dropdown"
+msgstr ""
+
+#: panel/admin-options.php:2016
+msgid "Specify secondary header dropdown font size."
+msgstr ""
+
+#: panel/admin-options.php:2032
+msgid "Search Background"
+msgstr ""
+
+#: panel/admin-options.php:2033
+msgid "Specify search background color."
+msgstr ""
+
+#: panel/admin-options.php:2039
+msgid "Search Border"
+msgstr ""
+
+#: panel/admin-options.php:2040
+msgid "Specify search border color."
+msgstr ""
+
+#: panel/admin-options.php:2046
+msgid "Search Font"
+msgstr ""
+
+#: panel/admin-options.php:2047
+msgid "Specify search font color."
+msgstr ""
+
+#: panel/admin-options.php:2053
+msgid "Search Active/Hover"
+msgstr ""
+
+#: panel/admin-options.php:2054
+msgid "Specify search active/hover color."
+msgstr ""
+
+#: panel/admin-options.php:2062
+msgid "Specify search font size."
+msgstr ""
+
+#: panel/admin-options.php:2078
+msgid "Sidebar Background"
+msgstr ""
+
+#: panel/admin-options.php:2079
+msgid "Specify sidebar background color."
+msgstr ""
+
+#: panel/admin-options.php:2085
+msgid "Sidebar Border"
+msgstr ""
+
+#: panel/admin-options.php:2086
+msgid "Specify sidebar border color."
+msgstr ""
+
+#: panel/admin-options.php:2092
+msgid "Sidebar Font"
+msgstr ""
+
+#: panel/admin-options.php:2093
+msgid "Specify sidebar font color."
+msgstr ""
+
+#: panel/admin-options.php:2099
+msgid "Sidebar Active/Hover"
+msgstr ""
+
+#: panel/admin-options.php:2100
+msgid "Specify sidebar active/hover color."
+msgstr ""
+
+#: panel/admin-options.php:2106
+msgid "Sidebar Heading Border"
+msgstr ""
+
+#: panel/admin-options.php:2107
+msgid "Specify sidebar heading border color."
+msgstr ""
+
+#: panel/admin-options.php:2114
+msgid "Sidebar Header"
+msgstr ""
+
+#: panel/admin-options.php:2115
+msgid "Specify sidebar header font size."
+msgstr ""
+
+#: panel/admin-options.php:2123
+msgid "Sidebar Content"
+msgstr ""
+
+#: panel/admin-options.php:2124
+msgid "Specify sidebar content font size."
+msgstr ""
+
+#: panel/admin-options.php:2132
+msgid "Sidebar Small"
+msgstr ""
+
+#: panel/admin-options.php:2133
+msgid "Specify sidebar small font size."
+msgstr ""
+
+#: panel/admin-options.php:2143
+msgid "Content"
+msgstr ""
+
+#: panel/admin-options.php:2149
+msgid "Content Background"
+msgstr ""
+
+#: panel/admin-options.php:2150
+msgid "Specify content background color."
+msgstr ""
+
+#: panel/admin-options.php:2156
+msgid "Content Border"
+msgstr ""
+
+#: panel/admin-options.php:2157
+msgid "Specify content border color."
+msgstr ""
+
+#: panel/admin-options.php:2164
+msgid "Specify content font color."
+msgstr ""
+
+#: panel/admin-options.php:2170
+msgid "Content Heading Border"
+msgstr ""
+
+#: panel/admin-options.php:2171
+msgid "Specify content heading border color."
+msgstr ""
+
+#: panel/admin-options.php:2178
+msgid "Content Header"
+msgstr ""
+
+#: panel/admin-options.php:2179
+msgid "Specify content header font size."
+msgstr ""
+
+#: panel/admin-options.php:2187
+msgid "Content Content"
+msgstr ""
+
+#: panel/admin-options.php:2188
+msgid "Specify content content font size."
+msgstr ""
+
+#: panel/admin-options.php:2196
+msgid "Content Small"
+msgstr ""
+
+#: panel/admin-options.php:2197
+msgid "Specify content small font size."
+msgstr ""
+
+#: panel/admin-options.php:2215
+msgid "Enable footer background image support."
+msgstr ""
+
+#: panel/admin-options.php:2257
+msgid "Footer Background"
+msgstr ""
+
+#: panel/admin-options.php:2258 panel/admin-options.php:2380
+msgid "Specify footer background color."
+msgstr ""
+
+#: panel/admin-options.php:2264
+msgid "Footer Border"
+msgstr ""
+
+#: panel/admin-options.php:2265
+msgid "Specify footer border color."
+msgstr ""
+
+#: panel/admin-options.php:2272
+msgid "Footer Font"
+msgstr ""
+
+#: panel/admin-options.php:2273
+msgid "Specify footer font color."
+msgstr ""
+
+#: panel/admin-options.php:2280
+msgid "Footer Active/Hover"
+msgstr ""
+
+#: panel/admin-options.php:2281
+msgid "Specify footer active/hover color."
+msgstr ""
+
+#: panel/admin-options.php:2288
+msgid "Footer Heading Border"
+msgstr ""
+
+#: panel/admin-options.php:2289
+msgid "Specify footer heading border color."
+msgstr ""
+
+#: panel/admin-options.php:2297
+msgid "Footer Header"
+msgstr ""
+
+#: panel/admin-options.php:2298
+msgid "Specify footer header font size."
+msgstr ""
+
+#: panel/admin-options.php:2307
+msgid "Footer Content"
+msgstr ""
+
+#: panel/admin-options.php:2308
+msgid "Specify footer content font size."
+msgstr ""
+
+#: panel/admin-options.php:2317
+msgid "Footer Small"
+msgstr ""
+
+#: panel/admin-options.php:2318
+msgid "Specify footer small font size."
+msgstr ""
+
+#: panel/admin-options.php:2337
+msgid "Enable extended footer background image support."
+msgstr ""
+
+#: panel/admin-options.php:2379
+msgid "Extended Footer Background"
+msgstr ""
+
+#: panel/admin-options.php:2386
+msgid "Extended Footer Border"
+msgstr ""
+
+#: panel/admin-options.php:2387
+msgid "Specify extended footer border color."
+msgstr ""
+
+#: panel/admin-options.php:2394
+msgid "Extended Footer Font"
+msgstr ""
+
+#: panel/admin-options.php:2395
+msgid "Specify extended footer font color."
+msgstr ""
+
+#: panel/admin-options.php:2402
+msgid "Extended Footer Active/Hover"
+msgstr ""
+
+#: panel/admin-options.php:2403
+msgid "Specify extended footer active/hover color."
+msgstr ""
+
+#: panel/admin-options.php:2410
+msgid "Extended Footer Heading Border"
+msgstr ""
+
+#: panel/admin-options.php:2411
+msgid "Specify extended footer heading border color."
+msgstr ""
+
+#: panel/admin-options.php:2419
+msgid "Extended Footer Header"
+msgstr ""
+
+#: panel/admin-options.php:2420
+msgid "Specify extended footer header font size."
+msgstr ""
+
+#: panel/admin-options.php:2429
+msgid "Extended Footer Content"
+msgstr ""
+
+#: panel/admin-options.php:2430
+msgid "Specify extended footer content font size."
+msgstr ""
+
+#: panel/admin-options.php:2439
+msgid "Extended Footer Small"
+msgstr ""
+
+#: panel/admin-options.php:2440
+msgid "Specify extended footer small font size."
+msgstr ""
+
+#: panel/admin-options.php:2451 panel/admin-options.php:2486
+msgid "Copyright"
+msgstr ""
+
+#: panel/admin-options.php:2457
+msgid "Copyright Background"
+msgstr ""
+
+#: panel/admin-options.php:2458
+msgid "Specify copyright background color."
+msgstr ""
+
+#: panel/admin-options.php:2464
+msgid "Copyright Border"
+msgstr ""
+
+#: panel/admin-options.php:2465
+msgid "Specify copyright border color."
+msgstr ""
+
+#: panel/admin-options.php:2471
+msgid "Copyright Font"
+msgstr ""
+
+#: panel/admin-options.php:2472
+msgid "Specify copyright font color."
+msgstr ""
+
+#: panel/admin-options.php:2478
+msgid "Copyright Active/Hover"
+msgstr ""
+
+#: panel/admin-options.php:2479
+msgid "Specify copyright active/hover color."
+msgstr ""
+
+#: panel/admin-options.php:2487
+msgid "Specify copyright font size."
+msgstr ""
+
+#: panel/options-framework.php:191
+msgid "Short sample text."
+msgstr ""
+
+#: panel/options-framework.php:192
+msgid ""
+"There is problem with access to Google Webfonts. Please try again later. If "
+"this message keeps appearing please contact our support at <a href=\"http://"
+"mpc.ticksy.com/\">mpc.ticksy.com</a>."
+msgstr ""
+
+#: panel/options-framework.php:228
+msgid "Welcome to Blaszok"
+msgstr ""
+
+#: panel/options-framework.php:228
+msgid "update!"
+msgstr ""
+
+#: panel/options-framework.php:229
+msgid ""
+"We have added some options here to improve your experience with our theme. "
+"Please save the panel to update all options after update. Thanks!"
+msgstr ""
+
+#: panel/options-framework.php:230
+msgid ""
+"We try our best to make it issues free but some bugs might still be there "
+"waiting to appear. If you found any issues or need help, please feel free to "
+"send us a support ticket and we will write back to you as soon as "
+"possible :) Visit "
+msgstr ""
+
+#: panel/options-framework.php:230
+msgid "our support"
+msgstr ""
+
+#: panel/options-framework.php:237
+msgid "Welcome to Massive Panel"
+msgstr ""
+
+#: panel/options-framework.php:238
+msgid "use it wisely to customize your theme."
+msgstr ""
+
+#: panel/options-framework.php:239
+msgid "Support"
+msgstr ""
+
+#: panel/options-framework.php:250
+msgid "Save Options"
+msgstr ""
+
+#: panel/options-framework.php:251
+msgid "Restore Defaults"
+msgstr ""
+
+#: panel/options-framework.php:251
+msgid ""
+"If you want to reset all settings to default values click OK. All your "
+"changes will be overwriten."
+msgstr ""
+
+#: panel/options-framework.php:254
+msgid "Options and styles saved."
+msgstr ""
+
+#: panel/options-framework.php:255
+msgid "Only options were saved. Try again."
+msgstr ""
+
+#: panel/options-framework.php:256
+msgid "Only styles were saved. Try again."
+msgstr ""
+
+#: panel/options-framework.php:257
+msgid "Something went wrong. Try again."
+msgstr ""
+
+#: panel/options-framework.php:297
+msgid "Default options restored."
+msgstr ""
+
+#: panel/options-framework.php:340
+msgid "Options saved."
+msgstr ""
+
+#: panel/options-framework.php:424 panel/options-framework.php:456
+msgid "You are not allowed to do this"
+msgstr ""
+
+#: panel/options-framework.php:463
+msgid "Wrong file uploaded."
+msgstr ""
+
+#: panel/options-framework.php:480
+msgid "Empty file content."
+msgstr ""
+
+#: panel/options-framework.php:482
+msgid "Importing..."
+msgstr ""
+
+#: panel/options-framework.php:494
+msgid "All settings were imported."
+msgstr ""
+
+#: panel/options-framework.php:497 panel/options-framework.php:503
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: panel/options-framework.php:507
+msgid "Return to panel"
+msgstr ""
+
+#: panel/options-medialibrary-uploader.php:26
+msgid "Theme Options Media"
+msgstr ""
+
+#: panel/options-medialibrary-uploader.php:275
+msgid "Gallery"
+msgstr ""
+
+#: panel/options-medialibrary-uploader.php:275
+msgid "Previously Uploaded"
+msgstr ""
+
+#: panel/options-sanitize.php:247
+msgid "No Repeat"
+msgstr ""
+
+#: panel/options-sanitize.php:248
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: panel/options-sanitize.php:249
+msgid "Repeat Vertically"
+msgstr ""
+
+#: panel/options-sanitize.php:250
+msgid "Repeat All"
+msgstr ""
+
+#: panel/options-sanitize.php:266
+msgid "Middle Left"
+msgstr ""
+
+#: panel/options-sanitize.php:267
+msgid "Middle Center"
+msgstr ""
+
+#: panel/options-sanitize.php:268
+msgid "Middle Right"
+msgstr ""
+
+#: panel/options-sanitize.php:284
+msgid "Scroll Normally"
+msgstr ""
+
+#: panel/options-sanitize.php:285
+msgid "Fixed in Place"
+msgstr ""
+
+#: panel/options-sanitize.php:357
+msgid "Normal"
+msgstr ""
+
+#: panel/options-sanitize.php:358
+msgid "Italic"
+msgstr ""
+
+#: panel/options-sanitize.php:359
+msgid "Bold"
+msgstr ""
+
+#: panel/options-sanitize.php:360
+msgid "Bold Italic"
+msgstr ""
+
+#: php/mpc-breadcrumbs.php:10
+msgid "Home"
+msgstr "Главная"
+
+#: php/mpc-breadcrumbs.php:11
+#, php-format
+msgid "Archive by Category \"%s\""
+msgstr ""
+
+#: php/mpc-breadcrumbs.php:12
+#, php-format
+msgid "Archive for \"%s\""
+msgstr ""
+
+#: php/mpc-breadcrumbs.php:13
+#, php-format
+msgid "Search Results for \"%s\" Query"
+msgstr ""
+
+#: php/mpc-breadcrumbs.php:14
+#, php-format
+msgid "Posts Tagged \"%s\""
+msgstr ""
+
+#: php/mpc-breadcrumbs.php:15
+#, php-format
+msgid "Articles Posted by %s"
+msgstr ""
+
+#: php/mpc-breadcrumbs.php:16
+msgid "Error 404"
+msgstr ""
+
+#: php/mpc-breadcrumbs.php:142
+msgid "Page"
+msgstr ""
+
+#: php/mpc-bundle-plugins.php:143
+msgid "Install Required Plugins"
+msgstr ""
+
+#: php/mpc-bundle-plugins.php:144
+msgid "Install Plugins"
+msgstr ""
+
+#: php/mpc-bundle-plugins.php:145
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: php/mpc-bundle-plugins.php:146
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: php/mpc-bundle-plugins.php:157
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: php/mpc-bundle-plugins.php:158
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: php/mpc-bundle-plugins.php:159
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: vc_templates/vc_btn.php:36
+msgid "Text on the button"
+msgstr ""
+
+#: woocommerce/content-product.php:68
+msgid "Quickview"
+msgstr ""
+
+#: woocommerce/content-product_cat.php:61
+#, php-format
+msgid "1 Item"
+msgid_plural "%s Items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/content-single-product.php:90
+#, php-format
+msgid "%s review"
+msgid_plural "%s reviews"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/content-single-product.php:158 woocommerce/share.php:26
+msgid "Share"
+msgstr ""
+
+#: vc_templates/post_block/_item.php:18
+msgid "Read more"
+msgstr ""
+
+#: woocommerce/cart/cart.php:19
+msgid "Shopping cart"
+msgstr ""
+
+#: woocommerce/loop/result-count.php:28
+msgid "Viewing the single result"
+msgstr ""
+
+#: woocommerce/loop/result-count.php:30
+#, php-format
+msgid "Viewing all %d products"
+msgstr ""
+
+#: woocommerce/loop/result-count.php:32
+#, php-format
+msgctxt "%1$d = first, %2$d = last, %3$d = total"
+msgid "Viewing %1$d - %2$d of %3$d products"
+msgstr ""
+
+#: woocommerce/single-product/sold-out-flash.php:16
+msgid "Sold Out!"
+msgstr ""
+
+#. Name of the theme
+msgid "Blaszok"
+msgstr ""
+
+#. Description of the theme
+msgid "All-in-One Theme with WooCommerce"
+msgstr ""
+
+#. URI of the theme
+msgid "http://blaszok.mpcthemes.net/landing/"
+msgstr ""
+
+#. Author of the theme
+msgid "MassivePixelCreation"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://mpcreation.net"
+msgstr ""
