@@ -150,7 +150,7 @@ body #mpcth_nav {
     display: table;
     width: 100%;
     ul.sub-menu {
-      max-width: 300px;
+      max-width: inherit;
       min-width: 250px;
       height: auto;
       &:after,

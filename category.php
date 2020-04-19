@@ -72,6 +72,7 @@ if ($blog_layout == 'masonry_load_more') {
       </header>
       <div id="mpcth_content"
         class="mpcth-blog-layout-<?php echo $blog_layout; ?><?php if ($blog_layout == 'masonry') echo ' mpcth-blog-columns-' . $blog_columns; ?>">
+        <?php get_template_part('subcategory-list'); ?>
         <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post();
 						global $more;

@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'vitaz';
   src: url("../fonts/vitaz.eot");
-  src: local("тШ║"), url("../fonts/vitaz.woff") format("woff"), url("../fonts/vitaz.ttf") format("truetype"), url("../fonts/vitaz.svg") format("svg");
+  src: local("☺"), url("../fonts/vitaz.woff") format("woff"), url("../fonts/vitaz.ttf") format("truetype"), url("../fonts/vitaz.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 * {
@@ -68,7 +68,7 @@ a {
 .newsItem {
   margin: 0 5px; }
 
-/* ╨Ф╤А╤Г╨│╨╕╨╡ ╨╖╨░╨┐╨╕╤Б╨╕ related items */
+/* Другие записи related items */
 .related_posts .relateditem {
   margin-bottom: 15px; }
   .related_posts .relateditem img {
@@ -76,7 +76,7 @@ a {
   .related_posts .relateditem .date {
     margin-top: 0px; }
 
-/* ╨Т╨╡╤А╤Е╨╜╨╡╨╡ ╨╝╨╡╨╜╤О */
+/* Верхнее меню */
 #mpcth_header_second_section {
   display: none;
   background-color: #444; }
@@ -101,14 +101,14 @@ a {
   background-size: contain;
   margin-top: 40px; }
 
-/* ╨Ь╨Х╨Э╨о MENU */
+/* МЕНЮ MENU */
 body #mpcth_nav {
   width: 100%; }
   body #mpcth_nav ul#mpcth_menu {
     display: table;
     width: 100%; }
     body #mpcth_nav ul#mpcth_menu ul.sub-menu {
-      max-width: 300px;
+      max-width: inherit;
       min-width: 250px;
       height: auto; }
       body #mpcth_nav ul#mpcth_menu ul.sub-menu:after, body #mpcth_nav ul#mpcth_menu ul.sub-menu:before {
@@ -175,7 +175,7 @@ ul#mpcth_menu.mpcth-menu ul.sub-menu ul.sub-menu li {
 .clr {
   clear: both; }
 
-/* ╨д╨г╨в╨Х╨а FOOTER */
+/* ФУТЕР FOOTER */
 footer#mpcth_footer {
   padding-top: 35px;
   padding-bottom: 30px;
@@ -211,7 +211,7 @@ h3.anonstitle {
   #mpcth_footer {
     padding: 0 10px; } }
 
-/* header ╤Е╨╡╨░╨┤╨╡╤А */
+/* header хеадер */
 body #mpcth_header_section {
   background-color: #9fdcfb;
   background-image: url(../images/verh-sajta-1.jpg);
@@ -261,7 +261,7 @@ body #mpcth_header_section {
   padding-bottom: 15px;
   text-align: justify; }
 
-/* ╨У╨░╨╗╨╡╤А╨╡╤П */
+/* Галерея */
 .kvgallery {
   margin: 15px 0; }
   .kvgallery .gallitem {
@@ -307,7 +307,7 @@ body #mpcth_header_section {
     .pravcal ul li .fileitem a {
       font-weight: normal; }
 
-/* LOGO ╨Ы╨Ю╨У╨Ю */
+/* LOGO ЛОГО */
 @media (max-width: 768px) {
   #mpcth_logo img {
     width: 100%;
@@ -325,7 +325,7 @@ body #mpcth_header_section {
 @media (min-width: 1200px) {
   #mpcth_nav ul#mpcth_menu > li {
     font-size: 14px; } }
-/* ╨Э╨╛╨▓╨╛╤Б╤В╨╕ */
+/* Новости */
 .news {
   padding-bottom: 15px;
   position: relative; }
@@ -378,7 +378,7 @@ body #mpcth_header_section {
     .widgettitle h3 a.rsswidget:first-child {
       border-bottom: none; }
 
-/* ╨Ь╨░╤В╨╡╤А╨╕╨░╨╗ */
+/* Материал */
 .video {
   background-color: red;
   color: #fff;
@@ -459,7 +459,7 @@ article.category-duhovenstvo {
 img.attachment-thumb {
   max-width: 276px !important; }
 
-/* ╨С╨░╨╜╨╜╨╡╤А╤Л */
+/* Баннеры */
 .banner img {
   width: 100%;
   height: auto; }
