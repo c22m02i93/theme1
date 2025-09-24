@@ -24,23 +24,33 @@ if (has_post_thumbnail()) {
 
 		$url = wp_get_attachment_image_src($thumb_id, 'full');
 		?>
-<div class="mpcth-post-thumbnail">
-  <a href="<?php echo $url[0]; ?>" title="<?php the_title(); ?>" class="fancybox">
-    <?php the_post_thumbnail('full'); ?>
+  <style>
+   p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+   }
+  </style>
+<div class="zag_zaip" >
+  <a href="<?php echo $url[0]; ?>" title="<?php the_title(); ?>" class="zag_zaip">
+     <?php the_post_thumbnail('full', array('style' => 'border-radius: 10px;')); ?>
   </a>
 </div>
 <?php
+
 	}
 
 	else {
 		$url = wp_get_attachment_image_src($thumb_id, 'medium');
 		?>
-<div class="mpcth-post-thumbnail">
-  <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="fancybox">
-    <?php the_post_thumbnail('news'); ?>
+
+	
+  <a style="float: left;margin: 6px 15px 5px 0px;" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+    <?php the_post_thumbnail('news'); ?> 
   </a>
-</div>
+
+		
+
 <?php
 	}
 
 }
+

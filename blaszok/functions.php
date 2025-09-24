@@ -1,5 +1,18 @@
 <?php
 
+add_filter( 'site_status_tests', 'revert_async_loopback_requests_test', 10, 1 );
+
+function revert_async_loopback_requests_test( $test_type ) {
+	$test_type['async']['loopback_requests']['test'] = 'loopback_requests';
+	$test_type['async']['loopback_requests']['has_rest'] = false;
+
+	return $test_type;
+}
+
+
+add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
+
+
 define('MPC_OPTIONS_NAME', 'mpcth_options_theme_customizer');
 define('MPC_THEME_PATH', get_template_directory());
 define('MPC_THEME_URI', get_template_directory_uri());

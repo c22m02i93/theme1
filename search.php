@@ -17,6 +17,9 @@ global $wp_query;
 
 $query = $wp_query;
 
+
+
+
 $layout = 'small';
 if (isset($mpcth_options['mpcth_enable_large_archive_thumbs']) && $mpcth_options['mpcth_enable_large_archive_thumbs']) $layout = 'full';
 
@@ -31,6 +34,9 @@ if (isset($mpcth_options['mpcth_enable_large_archive_thumbs']) && $mpcth_options
           <span><?php echo __('Search results for ', 'mpcth') . '<em class="mpcth-color-main-color">' . get_search_query() . '</em>'; ?></span>
         </h3>
       </header>
+		
+<?php echo do_shortcode('[wpdreams_ajaxsearchpro id=1]'); ?>	
+		
       <div id="mpcth_content" class="mpcth-blog-layout-<?php echo $layout; ?>">
         <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post();

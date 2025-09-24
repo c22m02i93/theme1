@@ -1,0 +1,59 @@
+/* Фон страницы
+*Может содержать цвет или изображение.
+*НЕ ЗАБЫВАЙТЕ ИСПОЛЬЗОВАТЬ !important.
+*/
+body {
+  background: Whitesmoke  url(your-background.jpg) !important;
+  background-size: cover !important;
+}
+ 
+/*Логотип (ИСПОЛЬЗОВАНИЕ ИЗОБРАЖЕНИЯ ОБЯЗАТЕЛЬНО!)
+* Не забудьте изменить размеры блока подходящие под Ваш логотип 
+*/
+#login h1 a { 
+  background: url(your-logo.png) no-repeat;
+  background-position: center center;
+  width: 300px;
+  height: 100px;
+}
+ 
+/* 
+*Блок формы 
+*/
+#login form {
+  background-color: Grey;
+}
+ 
+/* Поля ввода
+* «Имя пользователя» и «Пароль»
+*/
+#login .input {
+  background-color: Lightgrey;
+}
+ 
+/* Лейблы
+* Текст над полями
+*/
+#login label {
+  color: White;
+  font-size: 1rem;
+}
+/*
+* Кнопка «Войти»
+*/
+#login input[type=submit] {
+  background-color: Darkorange;
+  border-radius:0px;
+  border:none;
+  border-bottom:4px solid Lightorange;
+}
+ 
+#login input[type=submit]:active {} 
+ 
+/*Ссылки под формой
+* «Назад к блогу» и «Забыл пароль»
+*/
+#nav a,
+#backtoblog a {
+  color: Black !important;
+}

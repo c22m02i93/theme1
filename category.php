@@ -49,6 +49,10 @@ if ($blog_layout == 'masonry_load_more') {
 //if (isset($mpcth_options['mpcth_enable_large_archive_thumbs']) && $mpcth_options['mpcth_enable_large_archive_thumbs']) $layout = 'full';
 
 ?>
+<div class="row">
+        <div class="col-sm-3 hidden-xs"><?php dynamic_sidebar('data'); ?></div>
+       
+      </div>
 
 <div id="mpcth_main">
   <?php
@@ -61,7 +65,7 @@ if ($blog_layout == 'masonry_load_more') {
       class="<?php if ($blog_layout == 'masonry') echo 'mpcth-masonry-blog' ?> <?php if ($blog_load_more) echo 'mpcth-load-more' ?>">
       <header id="mpcth_archive_header">
         <?php mpcth_breadcrumbs(); ?>
-        <h1 id="mpcth_archive_title" class="mpcth-deco-header"><?php echo single_cat_title('', false); ?></h1>
+        <h1 id="mpcth_archive_title" class="mpcth-deco-header zagolovok_straniz"><?php echo single_cat_title('', false); ?></h1>
         <?php
 					$term_description = term_description();
 
@@ -94,7 +98,7 @@ if ($blog_layout == 'masonry_load_more') {
 					?>
         <article id="post-<?php the_ID(); ?>" <?php post_class('mpcth-post mpcth-waypoint'); ?>>
           <div class="mpcth-post-wrap">
-            <header class="mpcth-post-header">
+            <header class="zag_zaip">
               <?php if( $post_format == 'link' && $banner == 'true' ) { ?>
               <a href="<?php echo esc_url( $url ); ?>" title="<?php the_title(); ?>">
                 <div class="mpcth-post-thumbnail">
@@ -103,17 +107,17 @@ if ($blog_layout == 'masonry_load_more') {
               </a>
               <?php } else { ?>
               <?php if ($blog_layout == 'masonry') { ?>
-              <div class="mpcth-post-thumbnail">
+              <div class="zag_img" style="float: left;margin: 6px 15px 5px 0px;">
                 <?php get_template_part('post-format', $post_format); ?>
                 <?php mpcth_add_lightbox(); ?>
               </div>
               <?php } ?>
 
               <?php if ($blog_layout != 'full-alt') { ?>
-              <h4 class="mpcth-post-title">
+              <h3 class="zag_zaip">
                 <a href="<?php echo esc_url( $url ); ?>" class="mpcth-color-main-color-hover mpcth-color-main-border"
                   title="<?php the_title(); ?>"><?php the_title(); ?><?php echo $post_format == 'link' ? '<i class="fa fa-external-link"></i>' : ''; ?></a>
-              </h4>
+              </h3>
               <?php } ?>
 
               <?php if ($blog_layout != 'masonry') { ?>
@@ -136,21 +140,10 @@ if ($blog_layout == 'masonry_load_more') {
             </header>
 
             <?php if( !( $post_format == 'link' && $banner == 'true' ) ) { ?>
-            <section class="mpcth-post-content">
-              <?php 
-              $address = get_field('address');
-              if ($address) {
-                ?>
-              <div>
-                <?php
-                echo $address;
-                ?>
-              </div>
-              <?php
-              } else {
-                the_excerpt();
-              }              
-               ?>
+            <section class="telo_zip">
+             
+              
+				<?php do_excerpt(get_the_excerpt(), 450); ?>
             </section>
             <?php
        $video = get_field('video');
@@ -164,9 +157,7 @@ if ($blog_layout == 'masonry_load_more') {
                 <?php if (!$address) { mpcth_add_meta(); } ?>
               </span>
               <?php } ?>
-              <a class="mpcth-read-more mpcth-color-main-background-hover"
-                href="<?php the_permalink(); ?>"><?php _e('Continue Reading', 'mpcth'); ?><i
-                  class="fa fa-angle-<?php echo is_rtl() ? 'left' : 'right'; ?>"></i></a>
+              
             </footer>
             <?php } ?>
           </div>

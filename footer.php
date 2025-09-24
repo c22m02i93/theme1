@@ -20,13 +20,13 @@ global $page_id;
   </div>
 </div>
 <?php } ?>
-<div class="ornament2"></div>
+
 <footer id="mpcth_footer">
   <div id="mpcth_footer_container">
     <div class="mpcth-footer-wrap">
       <div class="row">
-        <div class="col-sm-3 hidden-xs"><?php dynamic_sidebar('footer1'); ?></div>
-        <div class="col-sm-6"><?php dynamic_sidebar('footer2'); ?></div>
+        <div class="col-sm-3 hidden-xs"><?php dynamic_sidebar('footer201'); ?></div>
+        <div class="col-sm-6"><?php dynamic_sidebar('footer21'); ?></div>
         <div class="col-sm-3"><?php dynamic_sidebar('footer3'); ?></div>
       </div>
     </div>
@@ -42,6 +42,12 @@ if ($back_to_top_position != 'none')
     echo '<a href="#" id="mpcth_back_to_top" class="mpcth-back-to-top-position-' . $back_to_top_position . '"><i class="fa fa-angle-up"></i></a>';
 ?>
 <?php wp_footer(); ?>
+<?php function salaider() {
+    wp_register_script('slaqder', home_url() . '/sl/chiefslider.min.js', true );
+    wp_enqueue_script('slaider');
+}
+ ?>
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
 (function(m, e, t, r, i, k, a) {

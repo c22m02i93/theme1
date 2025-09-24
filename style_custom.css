@@ -96,7 +96,7 @@ body
 .mpcth-skin-dark .mpcth-cart-wrap i, .mpcth-skin-dark .mpcth-cart-wrap a:hover,
 .mpcth-skin-dark .mpcth-post-content-wrap .mpcth-post-title a:hover
 		{ color:  !important; }
-		
+		#mpcth_page_wrap #mpcth_mega_menu .menu-item-14825 > .sub-container > .sub-menu {background-position: bottom center;}#mpcth_page_wrap #mpcth_mega_menu .menu-item-68 > .sub-container > .sub-menu {background-position: bottom center;}#mpcth_page_wrap #mpcth_mega_menu .menu-item-67 > .sub-container > .sub-menu {background-position: bottom center;}#mpcth_page_wrap #mpcth_mega_menu .menu-item-70 > .sub-container > .sub-menu {background-position: bottom center;}#mpcth_page_wrap #mpcth_mega_menu .menu-item-66 > .sub-container > .sub-menu {background-position: bottom center;}#mpcth_page_wrap #mpcth_mega_menu .menu-item-620 > .sub-container > .sub-menu {background-position: bottom center;}
 body #mpcth_page_header_content
 		{ padding: 0px 20px 0px 20px;}
 body #mpcth_page_header_secondary_content
