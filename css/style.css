@@ -1589,11 +1589,50 @@ border-bottom: 2px solid #155c7e;
     top: 0;
     padding: 0 !important;
     margin: 0 !important; }
-    body #mpcth_header_section #mpcth_controls_wrap #mpcth_controls_container a {
-      background-color: #ff9f18 !important;
-      color: #fff !important; 
-		position: relative;
-		padding: 9.4em 0;}
+body #mpcth_header_section #mpcth_controls_wrap #mpcth_controls_container .mpcth-social-link {
+  background-color: #ff9f18 !important;
+  color: #fff !important;
+  position: relative;
+  padding: 0;
+}
+
+.mpcth-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.mpcth-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ff9f18;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.mpcth-social-link .fa {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.mpcth-social-link:hover,
+.mpcth-social-link:focus {
+  background-color: #ffb648;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.mpcth-social-link:focus {
+  outline: 2px solid rgba(255, 182, 72, 0.7);
+  outline-offset: 2px;
+}
 
 #topMenu {
   background-color: #fff;

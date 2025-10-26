@@ -3092,6 +3092,235 @@ function handle_ajax_title_content_search() {
 add_action('wp_ajax_ajax_title_content_search', 'handle_ajax_title_content_search');
 add_action('wp_ajax_nopriv_ajax_title_content_search', 'handle_ajax_title_content_search');
 
+/**
+ * Registers the "Слайдер на главной" custom post type.
+ */
+function mpcth_register_frontpage_slider_post_type() {
+    $labels = array(
+        'name'               => __( 'Слайдеры', 'mpcth' ),
+        'singular_name'      => __( 'Слайдер', 'mpcth' ),
+        'menu_name'          => __( 'Слайдер на главной', 'mpcth' ),
+        'name_admin_bar'     => __( 'Слайдер', 'mpcth' ),
+        'add_new'            => __( 'Добавить слайдер', 'mpcth' ),
+        'add_new_item'       => __( 'Новый слайдер', 'mpcth' ),
+        'new_item'           => __( 'Новый слайдер', 'mpcth' ),
+        'edit_item'          => __( 'Редактировать слайдер', 'mpcth' ),
+        'view_item'          => __( 'Просмотреть слайдер', 'mpcth' ),
+        'all_items'          => __( 'Все слайдеры', 'mpcth' ),
+        'search_items'       => __( 'Найти слайдер', 'mpcth' ),
+        'not_found'          => __( 'Слайдеры не найдены', 'mpcth' ),
+        'not_found_in_trash' => __( 'Слайдеры в корзине не найдены', 'mpcth' ),
+    );
+
+    $args = array(
+        'labels'              => $labels,
+        'public'              => false,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_admin_bar'   => true,
+        'show_in_nav_menus'   => false,
+        'show_in_rest'        => true,
+        'menu_position'       => 21,
+        'menu_icon'           => 'dashicons-images-alt2',
+        'hierarchical'        => false,
+        'supports'            => array( 'title' ),
+        'has_archive'         => false,
+        'rewrite'             => false,
+        'publicly_queryable'  => false,
+        'capability_type'     => 'post',
+    );
+
+    register_post_type( 'frontpage_slider', $args );
+}
+add_action( 'init', 'mpcth_register_frontpage_slider_post_type' );
+
+/**
+ * Returns an array of attachment IDs for the slider gallery.
+ *
+ * @param int $post_id Slider post ID.
+ *
+ * @return array
+ */
+function mpcth_get_frontpage_slider_image_ids( $post_id ) {
+    $post_id = absint( $post_id );
+    if ( ! $post_id ) {
+        return array();
+    }
+
+    $ids = get_post_meta( $post_id, 'frontpage_slider_gallery', true );
+
+    if ( empty( $ids ) ) {
+        return array();
+    }
+
+    if ( is_string( $ids ) ) {
+        $ids = array_filter( array_map( 'absint', explode( ',', $ids ) ) );
+    } elseif ( is_array( $ids ) ) {
+        $ids = array_filter( array_map( 'absint', $ids ) );
+    } else {
+        $ids = array();
+    }
+
+    return array_values( $ids );
+}
+
+/**
+ * Returns attachment objects for the slider gallery.
+ *
+ * @param int|null $post_id Slider post ID. Defaults to current post in the loop.
+ *
+ * @return WP_Post[]
+ */
+function mpcth_get_frontpage_slider_images( $post_id = null ) {
+    if ( null === $post_id ) {
+        $post_id = get_the_ID();
+    }
+
+    $ids = mpcth_get_frontpage_slider_image_ids( $post_id );
+
+    if ( empty( $ids ) ) {
+        return array();
+    }
+
+    $query = array(
+        'post_type'      => 'attachment',
+        'post__in'       => $ids,
+        'orderby'        => 'post__in',
+        'posts_per_page' => -1,
+    );
+
+    return get_posts( $query );
+}
+
+/**
+ * Registers admin meta boxes for the slider post type.
+ */
+function mpcth_frontpage_slider_add_meta_boxes() {
+    add_meta_box(
+        'frontpage-slider-gallery',
+        __( 'Слайды галереи', 'mpcth' ),
+        'mpcth_frontpage_slider_render_metabox',
+        'frontpage_slider',
+        'normal',
+        'default'
+    );
+}
+add_action( 'add_meta_boxes', 'mpcth_frontpage_slider_add_meta_boxes' );
+
+/**
+ * Outputs the gallery meta box markup.
+ *
+ * @param WP_Post $post Current post object.
+ */
+function mpcth_frontpage_slider_render_metabox( $post ) {
+    wp_nonce_field( 'frontpage_slider_gallery_nonce', 'frontpage_slider_gallery_nonce' );
+
+    $image_ids = mpcth_get_frontpage_slider_image_ids( $post->ID );
+    $ids_value = $image_ids ? implode( ',', $image_ids ) : '';
+    ?>
+    <div class="frontpage-slider-meta">
+        <p class="description"><?php esc_html_e( 'Добавьте изображения, перетаскивайте их для изменения порядка и сформируйте галерею для главного слайдера.', 'mpcth' ); ?></p>
+
+        <div id="frontpage-slider-gallery" class="frontpage-slider-gallery" data-empty-text="<?php echo esc_attr__( 'Добавьте изображения, чтобы начать собирать слайды.', 'mpcth' ); ?>">
+            <?php
+            if ( $image_ids ) {
+                foreach ( $image_ids as $attachment_id ) {
+                    $thumbnail = wp_get_attachment_image( $attachment_id, 'thumbnail' );
+                    if ( ! $thumbnail ) {
+                        continue;
+                    }
+                    ?>
+                    <div class="frontpage-slider-item" data-id="<?php echo esc_attr( $attachment_id ); ?>">
+                        <span class="frontpage-slider-item__preview"><?php echo $thumbnail; ?></span>
+                        <button type="button" class="frontpage-slider-remove button-link-delete" aria-label="<?php esc_attr_e( 'Удалить изображение', 'mpcth' ); ?>">
+                            &times;
+                        </button>
+                    </div>
+                    <?php
+                }
+            }
+            ?>
+        </div>
+
+        <p id="frontpage-slider-empty" class="frontpage-slider-empty <?php echo $image_ids ? 'is-hidden' : ''; ?>"><?php esc_html_e( 'Добавьте изображения, чтобы начать собирать слайды.', 'mpcth' ); ?></p>
+
+        <input type="hidden" id="frontpage-slider-ids" name="frontpage_slider_ids" value="<?php echo esc_attr( $ids_value ); ?>" />
+
+        <button type="button" class="button button-secondary" id="frontpage-slider-add" data-frame-title="<?php echo esc_attr__( 'Выберите изображения для слайдера', 'mpcth' ); ?>" data-frame-button="<?php echo esc_attr__( 'Добавить в слайдер', 'mpcth' ); ?>">
+            <?php esc_html_e( 'Добавить слайды', 'mpcth' ); ?>
+        </button>
+    </div>
+    <?php
+}
+
+/**
+ * Saves slider gallery meta on post save.
+ *
+ * @param int $post_id Post ID.
+ */
+function mpcth_frontpage_slider_save_gallery( $post_id ) {
+    if ( ! isset( $_POST['frontpage_slider_gallery_nonce'] ) || ! wp_verify_nonce( $_POST['frontpage_slider_gallery_nonce'], 'frontpage_slider_gallery_nonce' ) ) {
+        return;
+    }
+
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+        return;
+    }
+
+    if ( isset( $_POST['post_type'] ) && 'frontpage_slider' === $_POST['post_type'] ) {
+        if ( ! current_user_can( 'edit_post', $post_id ) ) {
+            return;
+        }
+    }
+
+    $ids = array();
+
+    if ( isset( $_POST['frontpage_slider_ids'] ) && is_string( $_POST['frontpage_slider_ids'] ) ) {
+        $raw_ids = explode( ',', sanitize_text_field( wp_unslash( $_POST['frontpage_slider_ids'] ) ) );
+        $ids     = array_filter( array_map( 'absint', $raw_ids ) );
+    }
+
+    if ( ! empty( $ids ) ) {
+        update_post_meta( $post_id, 'frontpage_slider_gallery', $ids );
+    } else {
+        delete_post_meta( $post_id, 'frontpage_slider_gallery' );
+    }
+}
+add_action( 'save_post_frontpage_slider', 'mpcth_frontpage_slider_save_gallery' );
+
+/**
+ * Enqueues admin assets for the slider editor.
+ *
+ * @param string $hook Current admin page.
+ */
+function mpcth_frontpage_slider_admin_assets( $hook ) {
+    global $post_type;
+
+    if ( ! in_array( $hook, array( 'post.php', 'post-new.php' ), true ) ) {
+        return;
+    }
+
+    if ( 'frontpage_slider' !== $post_type ) {
+        return;
+    }
+
+    wp_enqueue_media();
+    wp_enqueue_style( 'frontpage-slider-admin', get_stylesheet_directory_uri() . '/css/frontpage-slider-admin.css', array(), '1.0.0' );
+    wp_enqueue_script( 'frontpage-slider-admin', get_stylesheet_directory_uri() . '/js/frontpage-slider-admin.js', array( 'jquery', 'jquery-ui-sortable' ), '1.0.0', true );
+
+    wp_localize_script(
+        'frontpage-slider-admin',
+        'FrontpageSliderAdmin',
+        array(
+            'frameTitle'  => __( 'Выберите изображения для слайдера', 'mpcth' ),
+            'frameButton' => __( 'Добавить в слайдер', 'mpcth' ),
+            'removeLabel' => __( 'Удалить изображение', 'mpcth' ),
+        )
+    );
+}
+add_action( 'admin_enqueue_scripts', 'mpcth_frontpage_slider_admin_assets' );
+
+
 
 // Функция для создания кастомного типа записи "Галерея"
 function create_gallery_post_type() {
@@ -3270,14 +3499,165 @@ function mpcth_child_enqueue_scripts()
 {
     wp_enqueue_style('true_stili', get_stylesheet_directory_uri() . '/css/style.css');
     wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/bootstrap/css/bootstrap.min.css');
-	wp_enqueue_style('slaider', get_stylesheet_directory_uri() . '/sl/chiefslider.min.css');
-   
+        wp_enqueue_style('slaider', get_stylesheet_directory_uri() . '/sl/chiefslider.min.css');
+
     wp_enqueue_style('tmplstyle', get_stylesheet_directory_uri() . '/css/style.css?v=5');
     wp_enqueue_script('mpc-child-main-js', get_stylesheet_directory_uri() . '/js/main.js', array('jquery', 'mpc-theme-plugins-js'), '1.0', true);
    /* wp_enqueue_script('respond', get_stylesheet_directory_uri() . '/js/respond.min.js');*/
     wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() . '/bootstrap/js/bootstrap.min.js');
 
 }
+
+/**
+ * Returns the default set of social links.
+ *
+ * @return array[]
+ */
+function mpcth_get_social_links() {
+    $links = array(
+        array(
+            'id'     => 'vk',
+            'icon'   => 'fa fa-vk',
+            'url'    => 'https://vk.com/simbirskaya_mitropolia',
+            'label'  => __( 'Мы ВКонтакте', 'mpcth' ),
+            'target' => '_blank',
+            'rel'    => 'noopener noreferrer',
+        ),
+        array(
+            'id'     => 'telegram',
+            'icon'   => 'fa fa-telegram',
+            'url'    => 'https://t.me/simbmit',
+            'label'  => __( 'Наш Telegram', 'mpcth' ),
+            'target' => '_blank',
+            'rel'    => 'noopener noreferrer',
+        ),
+        array(
+            'id'     => 'mail',
+            'icon'   => 'fa fa-envelope',
+            'url'    => 'mailto:info@mitropolia-simbirsk.ru',
+            'label'  => __( 'Электронная почта', 'mpcth' ),
+            'target' => '_self',
+            'rel'    => 'nofollow',
+        ),
+    );
+
+    return apply_filters( 'mpcth_social_links', $links );
+}
+
+/**
+ * Renders a group of social icons with consistent styling.
+ *
+ * @param array $args Optional arguments.
+ *
+ * @return string
+ */
+function mpcth_render_social_links( $args = array() ) {
+    $defaults = array(
+        'links'           => mpcth_get_social_links(),
+        'container'       => 'div',
+        'container_class' => 'mpcth-social-links',
+        'link_class'      => 'mpcth-social-link',
+        'echo'            => true,
+    );
+
+    $args = wp_parse_args( $args, $defaults );
+
+    $links = array();
+    foreach ( (array) $args['links'] as $link ) {
+        if ( empty( $link['url'] ) ) {
+            continue;
+        }
+        $links[] = $link;
+    }
+
+    if ( empty( $links ) ) {
+        return '';
+    }
+
+    $container       = in_array( $args['container'], array( 'div', 'nav', 'p' ), true ) ? $args['container'] : 'div';
+    $container_class = trim( $args['container_class'] );
+    $link_class      = trim( $args['link_class'] );
+
+    $items = array();
+    foreach ( $links as $link ) {
+        $icon  = ! empty( $link['icon'] ) ? '<i class="' . esc_attr( $link['icon'] ) . '" aria-hidden="true"></i>' : '';
+        $label = ! empty( $link['label'] ) ? '<span class="screen-reader-text">' . esc_html( $link['label'] ) . '</span>' : '';
+        $target = empty( $link['target'] ) ? '_blank' : $link['target'];
+        $rel    = empty( $link['rel'] ) ? 'noopener noreferrer' : $link['rel'];
+
+        $items[] = sprintf(
+            '<a class="%1$s" href="%2$s" target="%3$s" rel="%4$s">%5$s%6$s</a>',
+            esc_attr( $link_class ),
+            esc_url( $link['url'] ),
+            esc_attr( $target ),
+            esc_attr( $rel ),
+            $icon,
+            $label
+        );
+    }
+
+    $output = sprintf(
+        '<%1$s class="%2$s">%3$s</%1$s>',
+        esc_attr( $container ),
+        esc_attr( $container_class ),
+        implode( '', $items )
+    );
+
+    if ( $args['echo'] ) {
+        echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+        return '';
+    }
+
+    return $output;
+}
+
+/**
+ * Shortcode handler for rendering social links anywhere on the site.
+ *
+ * Usage: [mpcth_social_links class="my-class" show="vk,telegram"]
+ *
+ * @param array  $atts Shortcode attributes.
+ * @param string $content Optional content (unused).
+ *
+ * @return string
+ */
+function mpcth_social_links_shortcode( $atts, $content = null ) { // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed
+    $atts = shortcode_atts(
+        array(
+            'class' => '',
+            'show'  => '',
+        ),
+        $atts,
+        'mpcth_social_links'
+    );
+
+    $links = mpcth_get_social_links();
+
+    if ( ! empty( $atts['show'] ) ) {
+        $requested = array_map( 'trim', explode( ',', $atts['show'] ) );
+        $requested = array_filter( $requested );
+
+        if ( $requested ) {
+            $links = array_filter(
+                $links,
+                static function ( $link ) use ( $requested ) {
+                    return isset( $link['id'] ) && in_array( $link['id'], $requested, true );
+                }
+            );
+        }
+    }
+
+    $container_class = trim( 'mpcth-social-links ' . $atts['class'] );
+
+    return mpcth_render_social_links(
+        array(
+            'links'           => $links,
+            'container_class' => $container_class,
+            'echo'            => false,
+        )
+    );
+}
+add_shortcode( 'mpcth_social_links', 'mpcth_social_links_shortcode' );
 
 
 

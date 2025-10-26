@@ -301,15 +301,7 @@ if ( isset( $bg_cover ) ) {
 											<?php
 											// Пример ссылок на соцсети (VK/Telegram/YouTube)
 											?>
-											<a href="https://vk.com/simbirskaya_mitropolia" title="Мы ВКонтакте">
-												<i class="fa fa-vk"></i>
-											</a>
-											<a href="https://t.me/simbmit" title="Наш Telegram">
-												<i class="fa fa-telegram"></i>
-											</a>
-											<a href="https://www.youtube.com/channel/UCS8USoK9sXYVSb6MQGxczKw" title="YouTube">
-												<i class="fa fa-youtube-play"></i>
-											</a>
+                                                                                        <?php mpcth_render_social_links( array( 'container_class' => 'mpcth-social-links header-social-links' ) ); ?>
 											<?php
 										}
 
