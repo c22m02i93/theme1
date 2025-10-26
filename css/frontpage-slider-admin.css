@@ -1,0 +1,74 @@
+.frontpage-slider-meta {
+  margin-top: 10px;
+}
+
+.frontpage-slider-meta .description {
+  margin-bottom: 12px;
+}
+
+.frontpage-slider-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.frontpage-slider-item {
+  position: relative;
+  cursor: move;
+  width: 150px;
+}
+
+.frontpage-slider-item__preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(18, 43, 70, 0.12);
+}
+
+.frontpage-slider-remove {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #d63638;
+  color: #d63638;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.frontpage-slider-remove:hover,
+.frontpage-slider-remove:focus {
+  background-color: #d63638;
+  color: #fff;
+}
+
+.frontpage-slider-empty {
+  margin: 0 0 12px;
+  color: #646970;
+  font-style: italic;
+}
+
+.frontpage-slider-empty.is-hidden {
+  display: none;
+}
+
+.frontpage-slider-gallery .frontpage-slider-placeholder {
+  width: 150px;
+  height: 150px;
+  border: 2px dashed #b4b9be;
+  border-radius: 6px;
+}
+
+.frontpage-slider-gallery .frontpage-slider-item.is-dragging {
+  opacity: 0.6;
+}
